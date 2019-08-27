@@ -1,0 +1,4 @@
+se modifico la carpeta de web/imagenes
+se agrego la carpeta de qgis2web
+se modifico el archivo Buniversidades.html
+se modifico el archivo index1.html 

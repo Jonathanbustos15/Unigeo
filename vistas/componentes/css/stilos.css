@@ -1,0 +1,56 @@
+.first {
+    background: rebeccapurple;
+    color: #010008;
+    text-align: center;
+}
+.div [class="col"] {
+    border: 1px solid #fff;
+}
+.borde {
+    border: 1px #000 solid;
+    text-align: center;
+    height: 50px;
+}
+.color {
+    background: #6495ED;
+}
+.color2 {
+    background: #DCDCDC;
+}
+.color3 {
+    background: #FFFAF0;
+}
+.color4 {
+    background: #FFFFFF;
+}
+.boton3 {
+    color: #318aac !important;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+}
+.boton3:hover {
+    background: #318aac;
+    color: #fff !important;
+}
+.boton4 {
+    color: #318aac !important;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+}
+.boton4:hover {
+    background: #318aac;
+    color: #fff !important;
+    ;
+}

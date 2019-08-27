@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.useWebExt": true,
+    "php.validate.run": "onType",
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.CustomBrowser": "chrome",
+"liveServer.settings.NoBrowser": true,
+"liveServer.settings.ChromeDebuggingAttachment": true
+}

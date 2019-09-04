@@ -1,7 +1,7 @@
 body {
     font-family: arial, sans-serif;
     font-size: 9pt; 
-  }
+}
 
 td {
     white-space: nowrap;   
@@ -39,4 +39,20 @@ hr {
     padding: 0 0 0.5em 0;
     border:0;
     border-bottom: 1px #000 solid;
+}
+
+.pages-listing td:first-child {
+    width: 470px; word-wrap: break-word; padding-left: 30px;
+}
+.pages-listing td:last-child { padding-right: 30px; 
+}
+.pages-listing tr:last-child td:first-child {
+    -webkit-border-bottom-left-radius: 12px;
+    -moz-border-radius-bottomleft: 12px;
+    border-bottom-left-radius: 12px;
+}
+.pages-listing tr:last-child td:last-child {
+    -webkit-border-bottom-right-radius: 12px;
+    -moz-border-radius-bottomright: 12px;
+    border-bottom-right-radius: 12px;
 }

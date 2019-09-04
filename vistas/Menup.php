@@ -3,7 +3,7 @@
       <meta http-equiv="Content-Type" content="text/h; charset=UTF-8">
       <title>Unigeo</title>
       <link href="componentes/css/content.css" rel="stylesheet" type="text/css"/>
-      <link href="componentes/css/basemod.css" rel="stylesheet" type="text/css"/>
+  
       <link href="componentes/css/Stylemenup.css" rel="stylesheet" type="text/css"/>
       
       			<script type="text/javascript">

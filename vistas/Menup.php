@@ -13,6 +13,7 @@
             }
         </script></head>
     <body onload="showTable();">
+        <?php include("header.php"); ?>
         <div id="page">
             <div id="header">
                 <div id="headline">

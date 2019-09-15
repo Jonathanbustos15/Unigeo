@@ -13,34 +13,11 @@
     </head>
     <body>
         <div class="header">
-            <nav class="navbar navbar-expand-md nav-bg">
-<!--                <div>
-                    <img src="componentes/images/Logo.png" alt=""/>
-                </div>-->
-                <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                </button>
-                <a href="#" class="navbar-brand">
-                    <img src="componentes/images/UNIGEO1.png" alt=""/>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link active">Inicio</a>
-                        <a href="#" class="nav-item nav-link">Ruta</a>
-                        <a href="#" class="nav-item nav-link">Universidad</a>
-                        <a href="#" class="nav-item nav-link">Noticias</a>
-                        <a href="#" class="nav-item nav-link">Usuarios</a>
-
-                    </div>
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link">Nombre del usuario</a>
-                                           </div>
-                </div>
-                <img width="200" src="componentes/images/SanjoseLog2_1.png" alt=""/>
-
-            </nav>
-        </div>
+            <?php include("header.php");?>
+            <div class="container">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6601042762727!2d-74.06648958614473!3d4.654563996618914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a4571ebf6ed%3A0x76ebb10f952d3917!2sSan%20Jos%C3%A9%20Fundaci%C3%B3n%20de%20Educaci%C3%B3n%20Superior%20Bienestar!5e0!3m2!1ses!2sco!4v1568585399088!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                
+            </div>
     </body>
 </html>                              

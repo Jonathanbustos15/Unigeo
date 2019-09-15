@@ -1,33 +1,7 @@
-.menu{
-    margin: 5% auto;
-
-}
-
-.menusub{
-    border: solid 5px black;
-    border-radius: 12px;
-    background: #45B6F2;
-    color: white;
-    font-weight: bold;
-    text-align:center;
-    margin-left: 15px;
-}
-
-.nav-bg ,a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color:#45B6F2 ;
-    box-sizing: border-box;
-    color: #fff;
-}
-
-
-.header{
-   box-shadow: 0px 10px 5px 0px rgba(12, 26, 47,0.75);
-   
-    
-}
-
-navbar-toggler{
-    background: black;
-    
+body{
+    margin:0 auto;   
+    background-image: url("../../componentes/images/fondod.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;    
 }

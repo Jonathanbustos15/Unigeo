@@ -7,100 +7,100 @@
 <link href="componentes/css/StyleMenu.css" rel="stylesheet" type="text/css"/>
 
 <body>
+    <?php include("header.php"); ?>
+
     <div class="container">
         <div class="row titulo">
-            <div class="col-sm">
-                <h1>UNIGEO</h1>
+
+            <div class="col-sm">              
             </div>
         </div>
     </div>
-    <section>
-        <div class="container">
+    <section class="mg">
+        <table class="table1 table-hover table-responsive-sm menu">
+            <tbody>
+                <tr>
+                    <td>Proyecto</td>
+                    <td>  <a class="btnb" href="#">View sketched (Arial)</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Configuración_proyecto</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Ubicación</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Universidad</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Crea Universidad</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Detalles de Universidad</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Crear Sede</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Detalle Sede</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Crear Carrera</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Noticias</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Crea Noticia</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr>
+                    <td>Noticia 2</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
+                <tr class="table2">
+                    <td>Ruta</td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 2</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 3</a></td>
+                </tr>
 
-            <table class="table1 table-striped">
-                <tbody>
-                    <tr>
-                        <td>Proyecto</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Configuración_proyecto</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Ubicación</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Universidad</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Crea Universidad</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Detalles de Universidad</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Crear Sede</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Detalle Sede</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Crear Carrera</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Noticias</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Crea Noticia</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Noticia 2</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>Ruta</td>
-                        <td>  <a class="btn" href="#">Opcion 1</a></td>
-                        <td>  <a class="btn" href="#">Opcion 2</a></td>
-                        <td>  <a class="btn" href="#">Opcion 3</a></td>
-                    </tr>
+            </tbody>
+        </table>
 
-                </tbody>
-            </table>
-        </div>
 
     </section>
 

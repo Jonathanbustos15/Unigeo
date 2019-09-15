@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Bootstrap 4 Static Navbar</title>
+        <title>header</title>
         <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="componentes/js/popper.min.js" type="text/javascript"></script>
@@ -12,8 +12,8 @@
 
     </head>
     <body>
-        <div class="header">
-            <nav class="navbar navbar-expand-md nav-bg">
+        <div class="">
+            <nav class="navbar fixed-top navbar-expand-md nav-bg heade">
 <!--                <div>
                     <img src="componentes/images/Logo.png" alt=""/>
                 </div>-->
@@ -38,8 +38,9 @@
                         <a href="#" class="nav-item nav-link">Nombre del usuario</a>
                                            </div>
                 </div>
+                <div class="d-none d-md-block">
                 <img width="200" src="componentes/images/SanjoseLog2_1.png" alt=""/>
-
+                </div>
             </nav>
         </div>
     </body>

@@ -12,10 +12,12 @@
 
     </head>
     <body>
-        <div class="bs-example">
+        <div class="header">
             <nav class="navbar navbar-expand-md nav-bg">
-
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+<!--                <div>
+                    <img src="componentes/images/Logo.png" alt=""/>
+                </div>-->
+                <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -29,13 +31,15 @@
                         <a href="#" class="nav-item nav-link">Ruta</a>
                         <a href="#" class="nav-item nav-link">Universidad</a>
                         <a href="#" class="nav-item nav-link">Noticias</a>
-                         <a href="#" class="nav-item nav-link">Usuarios</a>
-                        
+                        <a href="#" class="nav-item nav-link">Usuarios</a>
+
                     </div>
                     <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link">Jeison Mauricio Zapata Alonso</a>
-                    </div>
+                        <a href="#" class="nav-item nav-link">Nombre del usuario</a>
+                                           </div>
                 </div>
+                <img width="200" src="componentes/images/SanjoseLog2_1.png" alt=""/>
+
             </nav>
         </div>
     </body>

@@ -20,7 +20,14 @@
     color: #fff;
 }
 
-.active {
 
+.header{
+   box-shadow: 0px 10px 5px 0px rgba(12, 26, 47,0.75);
+   
+    
+}
 
+navbar-toggler{
+    background: black;
+    
 }

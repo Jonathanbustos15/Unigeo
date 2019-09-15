@@ -1,4 +1,10 @@
-
+/*body{
+    margin:0 auto;   
+    background-image: url("../images/fondob.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;    
+}*/
 
 h1 {
     font-size: 283.33%;
@@ -22,11 +28,19 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 1rem;
     vertical-align:top;
     border-top:1px solid #dee2e6}
-.table thead th{vertical-align:bottom;
-                border-bottom:2px solid #dee2e6}
-.table tbody+tbody{border-top:2px solid #dee2e6}
 
+.table thead th{
+    vertical-align:bottom;
+    border-bottom:2px solid #dee2e6
+}
 
+.table tbody+tbody{
+    border-top:2px solid #dee2e6
+}
+
+table1{
+    border: 1px solid black;
+}
 .btn {
     color: #fff;
     text-decoration: none;

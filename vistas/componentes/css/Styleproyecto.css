@@ -1,0 +1,26 @@
+.menu{
+    margin: 5% auto;
+
+}
+
+.menusub{
+    border: solid 5px black;
+    border-radius: 12px;
+    background: #45B6F2;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    margin-left: 15px;
+}
+
+.nav-bg ,a{
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color:#45B6F2 ;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.active {
+
+
+}

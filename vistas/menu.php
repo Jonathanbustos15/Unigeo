@@ -10,7 +10,7 @@
     <?php include("header.php"); ?>
 
     <div class="container">
-        <div class="row titulo">
+        <div class="row">
 
             <div class="col-sm">              
             </div>
@@ -21,7 +21,7 @@
             <tbody>
                 <tr>
                     <td>Proyecto</td>
-                    <td>  <a class="btnb" href="#">View sketched (Arial)</a></td>
+                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>

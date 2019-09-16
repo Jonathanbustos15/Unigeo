@@ -12,7 +12,7 @@
 
     </head>
     <body>
-        <div class="">
+        <div class="menu">
             <nav class="navbar fixed-top navbar-expand-md nav-bg heade">
 <!--                <div>
                     <img src="componentes/images/Logo.png" alt=""/>
@@ -20,8 +20,7 @@
                 <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                </button>
+             
                 <a href="#" class="navbar-brand">
                     <img src="componentes/images/UNIGEO1.png" alt=""/>
                 </a>

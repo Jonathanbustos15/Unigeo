@@ -1,5 +1,13 @@
+body{
+    margin:0 auto;   
+    background-image: url("../../componentes/images/fondod.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;    
+}
+
 .menu{
-    margin: 5% auto;
+    margin: 5%;
 
 }
 
@@ -11,6 +19,7 @@
     font-weight: bold;
     text-align:center;
     margin-left: 15px;
+   
 }
 
 .nav-bg ,a{

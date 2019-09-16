@@ -1,0 +1,30 @@
+h1{
+    margin:10% 30% 5% !important;
+}
+
+.c1{
+    margin-right: 50px;
+}
+
+
+.c3{
+    margin-left: 50px;
+}
+
+.c1, .c2, .c3{
+    background: rgba(255, 255, 255,.5);
+    border: solid 1px rgba(0,0,0,0.9);
+    color:white;
+    border-radius: 50%;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    padding: 1.2em;
+}
+
+.t1, .t2, .t3{
+
+    background: #B6C641;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 8px rgba(0,0,0,0.75);
+}

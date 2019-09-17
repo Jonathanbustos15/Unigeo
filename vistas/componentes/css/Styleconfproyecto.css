@@ -1,9 +1,15 @@
 h1{
     margin:10% 30% 5% !important;
+    color:#fff;
 }
 
+h4{
+    color:#fff;
+    margin-left: 2%;
+}
 .c1{
     margin-right: 50px;
+
 }
 
 
@@ -19,12 +25,24 @@ h1{
     height: 70px;
     width: 100px;
     text-align: center;
-    padding: 1.2em;
+    padding: 1.0em;
+    text-decoration: none;
 }
 
 .t1, .t2, .t3{
-
     background: #B6C641;
     border-radius: 5px;
+    box-shadow: 10px 10px 10px 8px rgba(0,0,0,0.75);
+}
+
+.btn-circle {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding: 10.2em;
+    font-size: 12px;
+    border-radius: 15px;
+    line-height: 1.33;
+    color: #fff;
     box-shadow: 10px 10px 10px 8px rgba(0,0,0,0.75);
 }

@@ -16,34 +16,32 @@
         <div class="panel">
             <h1>CONFIGURACION DEL PROYECTO</h1>
         </div>
+        <div>
+            <h4>Detalles del proyecto</h2>
+        </div>
 
         <div class="container">
             <div class="row">
 
-                <div class="col-2 c1">
-                    <div class="t1">
-                        texto 1
+                <div class="col-md-2 col-sm-12 c1">
+                    <div>
+                     <button type="button" class="btn btn-danger btn-circle"><i>Instituciones</i></button>
                     </div>
                 </div>
 
-                <div class="col-2 c2">
-                    <div class="t2">
-                        texto 2
+                <div class="col-md-2 col-sm-12 c2">
+                    <div>
+                    <button type="button" class="btn btn-primary btn-circle"><i>Instituciones</i></button>
                     </div>
                 </div>
 
-                <div class="col-2 c3">
-                     <div class="t3">
-                        texto 2
+                <div class="col-md-2 col-sm-12 c3">
+                    <div>
+                       <button type="button" class="btn btn-info btn-circle"><i>Instituciones</i></button>
                     </div>
-                </div>                
-
+                </div>  
 
             </div>
-
-
         </div>
-
-
     </body>
 </html>

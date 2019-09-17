@@ -14,9 +14,7 @@
     <body>
         <div class="menu">
             <nav class="navbar fixed-top navbar-expand-md nav-bg heade">
-<!--                <div>
-                    <img src="componentes/images/Logo.png" alt=""/>
-                </div>-->
+         
                 <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>

@@ -10,7 +10,7 @@ require_once '../Modelo/Conexion.php';
         <title>Registro</title>
         <meta charset="UTF-8">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="css/StyleRegistro.css" rel="stylesheet" type="text/css"/>
+        <link href="componentes/css/StyleRegistro.css" rel="stylesheet" type="text/css"/>
         <link href="css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
         <link href="css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
         <script src="js/bootstrap.js" type="text/javascript"></script>

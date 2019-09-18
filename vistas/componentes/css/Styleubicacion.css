@@ -1,0 +1,9 @@
+.a1, .a2{
+    border: solid 3px black;
+    background-color: salmon;
+}
+
+.mg{
+    margin-top: 10%;   
+    width: 100%;
+}

@@ -2,14 +2,13 @@
 <title>Login</title>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="css/prueba.css" type="text/css" />
-<script src="js/Unigeo.js" type="text/javascript"></script>
-<script src="js/bootstrap.js" type="text/javascript"></script>
-<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script src="componentes/js/Unigeo.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/prueba.css" type="text/css" />
+<script src="componentes/js/bootstrap.js" type="text/javascript"></script>
+<script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="componentes/js/popper.min.js" type="text/javascript"></script>
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <script>

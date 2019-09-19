@@ -9,49 +9,104 @@
 <?php include("header.php"); ?>
 <body>
     <section class="mg">
-        <div class="container">
+        <div class="container1">
             <div class="row">
-                <div class="col-4 bg-info a1">
+                <div class="col-4 mg1 p-4">
                     <div>
                         <form action="action">
-                            <div class="form-group row">
-                                <label for="example-text-input" class="col-2 col-form-label">Valor</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Valor</span>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="example-search-input" class="col-2 col-form-label">Universidad </label>
-                                <div class="col-10">
-                                    <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
+
+                           <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Universidad</span>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="example-email-input" class="col-2 col-form-label">Sede</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
+
+                          <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Sede</span>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="example-url-input" class="col-2 col-form-label">URL</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
+
+                           <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">carrera</span>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
+
+                           <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tipo de carrera</span>
                                 </div>
-                            </div>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Modalidad</span>
+                                </div>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
+
+                          <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Localidad</span>
+                                </div>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                             </div>
                         </form>
+
                     </div>
                 </div>
-                <div class="col-8 bg-dark a1">
+                <div class="col-6 a2 ml-5">
                     <div>
-                        elemento2 
+                        <img src="componentes/images/mapa.jpg" alt=""/>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

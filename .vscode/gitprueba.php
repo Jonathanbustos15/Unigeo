@@ -14,6 +14,8 @@ and open the template in the editor.
         
         <h1>esta es una prueba</h1>
         <h2>esta es una prueba remota</h2>
+        <h1>prueba tuya</h1>
+        <h2>prueba mia</h2>
         <?php
         // put your code here
         ?>

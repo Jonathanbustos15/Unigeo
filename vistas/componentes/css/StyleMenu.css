@@ -1,11 +1,3 @@
-body{
-    margin:0 auto;   
-    background-image: url("../../componentes/images/fondod.jpg");
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    background-attachment: fixed;    
-}
-
 
 .mg{
     margin-left: 20%;
@@ -20,10 +12,8 @@ body{
     
 }
 
-
 .table1 tr:last-child{
     border: none;
-
 }
 
 tr:nth-child(odd) {

@@ -1,3 +1,9 @@
+:root{
+    --blue-main: rgb(69, 182, 242);
+
+}
+
+
 body{
     margin:0 auto;   
     background-image: url("../../componentes/images/fondod.jpg");

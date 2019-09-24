@@ -1,0 +1,14 @@
+.cont{
+    margin-bottom: 5%;
+    background: #18121E;
+    width: 100%;
+    border:solid 2px black;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    color: #fff;
+}
+.md-outline.select-wrapper+label {
+top: .5em !important;
+z-index: 2 !important;
+}

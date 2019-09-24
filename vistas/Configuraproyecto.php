@@ -31,13 +31,13 @@
 
                 <div class="col-md-2 col-sm-12 c2">
                     <div>
-                    <button type="button" class="btn btn-primary btn-circle"><i>Instituciones</i></button>
+                    <button type="button" class="btn btn-primary btn-circle"><i>Funcionarios</i></button>
                     </div>
                 </div>
 
                 <div class="col-md-2 col-sm-12 c3">
                     <div>
-                       <button type="button" class="btn btn-info btn-circle"><i>Instituciones</i></button>
+                       <button type="button" class="btn btn-info btn-circle"><i>Usuarios</i></button>
                     </div>
                 </div>  
 

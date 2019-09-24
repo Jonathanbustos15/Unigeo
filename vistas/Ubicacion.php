@@ -7,6 +7,7 @@
 <link href="componentes/css/Styleubicacion.css" rel="stylesheet" type="text/css"/>
 
 <?php include("header.php"); ?>
+
 <body>
     <section class="mg">
         <div class="container1">
@@ -16,7 +17,7 @@
                         <form action="action">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Valor</span>
+                                    <span class="input-group-text" id="">Valor</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                     <option selected>Choose...</option>
@@ -24,9 +25,9 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
 
-                           <div class="input-group input-group-sm mb-3">
+                            <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Universidad</span>
                                 </div>
@@ -36,9 +37,9 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
 
-                          <div class="input-group input-group-sm mb-3">
+                            <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Sede</span>
                                 </div>
@@ -48,9 +49,9 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
 
-                           <div class="input-group input-group-sm mb-3">
+                            <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">carrera</span>
                                 </div>
@@ -60,11 +61,11 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
 
-                           <div class="input-group input-group-sm mb-3">
+                            <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tipo de carrera</span>
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Tipo carrera</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                     <option selected>Choose...</option>
@@ -72,7 +73,7 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
 
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
@@ -84,9 +85,9 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
 
-                          <div class="input-group input-group-sm mb-3">
+                            <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Localidad</span>
                                 </div>
@@ -96,20 +97,40 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                             </div>
+                            </div>
                         </form>
-
                     </div>
                 </div>
                 <div class="col-6 a2 ml-5">
-                    <div>
-                        <img src="componentes/images/mapa.jpg" alt=""/>
+                    <div class="map">
+                        <img src="componentes/images/Mapabpng.png" width="800" height="500" alt=""/>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+   <section class="tab">
+       
+        <table class="table-hover table-responsive-sm">
+            <tbody>
+                <tr>
+                    <th colspan="3">Detalles de la carrera</th>
+                </tr>
+                <tr>
+                    <td>NOMBRE</td>
+                    <td>SNIES</td>
+                    <td>VALOR</td>
+                   
+                </tr>
+                <tr>
+                    <td>NOMBRE1</td>
+                    <td>17892</td>
+                    <td>$1564812</td>
+                   
+                </tr>
+            </tbody>
+        </table>
 </html>
 </body>
 

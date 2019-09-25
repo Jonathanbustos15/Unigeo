@@ -1,14 +1,21 @@
+
 .cont{
-    margin-bottom: 5%;
-    background: #18121E;
-    width: 100%;
-    border:solid 2px black;
+    width: 30% !important;
     border-collapse: collapse;
-    border-radius: 1em;
+    border-radius: 2em;
     overflow: hidden;
     color: #fff;
+    box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);    
 }
-.md-outline.select-wrapper+label {
-top: .5em !important;
-z-index: 2 !important;
+
+.titulo{
+    width: auto;
+    height: 1%;
+    background-color:rgba(16, 43, 82, .7) ;
+    text-align: center;
+}
+
+.bg-card{
+
+    background-color:rgba(16, 43, 82, .7) ;
 }

@@ -7,53 +7,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link href="componentes/css/Stylecreauniversidad.css" rel="stylesheet" type="text/css"/>
-        <script src="componentes/js/select.js" type="text/javascript"></script>
 
         <title></title>
     </head>
     <body>
         <?php include("header.php"); ?>
-        
-        <div class="container">
-            <div class="row">
-                
-                
-            </div>
-        </div>
-        
-        <div class="container cont">
-            <div class="card">
-                <div class="bg-primary card-header">
-                    Featured
-                </div>
-                <div class="card-body bg-card">
-                    <h5 class=" card-title">Special title treatment</h5>
-                    <div>
-                        <div class="form-group">
-                            <div class="">
-                                <label for="nombre">Nombre</label>
-                                <input class="form-control form-control-ms" id="nombre" name="nombre" type="text">
-                            </div>
-                            <div class="">
-                                <label for="ex2">col-xs-3</label>
-                                <input class="form-control form-control-ms" id="ex2" type="text">
-                            </div>
-                            <div class="">
-                                <label for="ex3">Telefono</label>
-                                <input class="form-control form-control-ms" id="nombre" name="nombre" type="text">
-                            </div>
-                        </div>
 
+        <div class="container cont">
+            <div class="row">
+                <div class="col-4 pt-5">
+                    <center><img src="componentes/images/U.png" alt=""/></center>
+                    <img class="p-2" src="componentes/images/UNIGEO1.png" alt=""/>
+                </div>
+                <!--panel derecho-->
+                <div class="col-8  px-0">
+                    <div class="container">
+                        <div class="">
+                            <form action="#" class="p-3 form">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</body>
-
-
-
-
+    </body>
 </html>
 <

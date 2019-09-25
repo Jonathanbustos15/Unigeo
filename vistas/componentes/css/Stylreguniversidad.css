@@ -5,6 +5,7 @@
 table{
     margin-bottom: 5%;
     background: #18121E;
+    @import "Stylecreauniversidad.css";
     border:solid 2px black;
     border-collapse: collapse;
     border-radius: 1em;

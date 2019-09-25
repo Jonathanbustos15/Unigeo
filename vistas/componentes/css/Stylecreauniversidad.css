@@ -1,21 +1,6 @@
-
 .cont{
-    width: 30% !important;
-    border-collapse: collapse;
-    border-radius: 2em;
-    overflow: hidden;
+    background-color: rgba(0,0,0,.8) !important;  
     color: #fff;
-    box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);    
-}
-
-.titulo{
-    width: auto;
-    height: 1%;
-    background-color:rgba(16, 43, 82, .7) ;
-    text-align: center;
-}
-
-.bg-card{
-
-    background-color:rgba(16, 43, 82, .7) ;
+ 
+    
 }

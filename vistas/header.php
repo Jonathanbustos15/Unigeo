@@ -18,9 +18,9 @@
                 <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-             
+                <img src="componentes/images/UNIGEO2.png" alt=""/>
                 <a href="#" class="navbar-brand">
-                    <img src="componentes/images/UNIGEO1.png" alt=""/>
+       
                 </a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">

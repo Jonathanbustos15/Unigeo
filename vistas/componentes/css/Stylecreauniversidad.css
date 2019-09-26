@@ -1,6 +1,23 @@
 .cont{
     background-color: rgba(0,0,0,.8) !important;  
     color: #fff;
+}
 
+.select option[data-default] {
+    color: #888;
+}
 
+imput[type="file"] {
+
+    ang(en)::after {
+        content: "Select file...";
+    }
+
+}
+.titulo{
+    text-align:center;
+    padding: 1em;
+    color: white;
+    background: skyblue;
+    
 }

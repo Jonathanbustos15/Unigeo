@@ -14,14 +14,12 @@
     <body>
         <div class="menu">
             <nav class="navbar fixed-top navbar-expand-md nav-bg heade">
-         
+
                 <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <img src="componentes/images/UNIGEO2.png" alt=""/>
-                <a href="#" class="navbar-brand">
-       
-                </a>
+                <a href="#" class="navbar-brand"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="#" class="nav-item nav-link active">Inicio</a>
@@ -29,14 +27,13 @@
                         <a href="#" class="nav-item nav-link">Universidad</a>
                         <a href="#" class="nav-item nav-link">Noticias</a>
                         <a href="#" class="nav-item nav-link">Usuarios</a>
-
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="#" class="nav-item nav-link">Nombre del usuario</a>
-                                           </div>
+                    </div>
                 </div>
                 <div class="d-none d-md-block">
-                <img width="200" src="componentes/images/SanjoseLog2_1.png" alt=""/>
+                    <img src="componentes/images/SanjoseLog2_1.png"  width="200" alt=""/>
                 </div>
             </nav>
         </div>

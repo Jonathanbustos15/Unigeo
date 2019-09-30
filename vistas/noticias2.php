@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <title>Menu</title>
+    <title>noticias</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <?php include("header.php"); ?>
@@ -9,10 +9,10 @@
     <body>
         <div class="container">
             <div class="row bt">
-                <div class="col-2">
+                <div class="col-6">
                     <button type="submit" class="btn btn-info" name="registrar">Crear</button>
                 </div>  
-                <div class="col-2">
+                <div class="col-6">
                     <button type="submit" class="btn btn-info" name="registrar">Ver</button>
                 </div>
             </div>

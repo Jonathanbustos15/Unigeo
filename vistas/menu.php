@@ -63,7 +63,7 @@
                 </tr>
                 <tr>
                     <td>Detalle Sede</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="detsede.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
@@ -81,7 +81,7 @@
                 </tr>
                 <tr>
                     <td>Crea Noticia</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="crearnoticia.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>

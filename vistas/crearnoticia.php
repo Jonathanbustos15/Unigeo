@@ -15,7 +15,7 @@
 
 
         <div class="container cont">
-            <div class="titulo" ><h4>Creacion de universidad</h4></div>
+            <div class="titulo" ><h4>Crear Noticia</h4></div>
             <div class="row">
                 <div class="col-4 pt-5 logo_U">
                     <img src="componentes/images/UNIGEO_1.png" alt="unigeo"/>
@@ -27,18 +27,29 @@
                             <div></div>
                             <!--nombre-->
                             <div class="form-group pt-2">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                                <label for="titulo">Titulo</label>
+                                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo">
                             </div>
-                            <!--nit-->
-                            <div class="form-group pt-2">
-                                <label for="nit">NIT</label>
-                                <input type="text" class="form-control" id="Nombre" placeholder="NIT">
+
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control rounded-0" id="descripcion" name="descripcion" rows="3"></textarea>
                             </div>
-                            <!--option universidad-->
+                           <!--universidad-->
+                            <div class="form-group ">
+                                <label for="faculta">Universidad</label>
+                                <select class="custom-select form-control" name="facultad" id="inputGroupSelect01" placeholder="Facultad">
+                                    <option selected="selected">Seleccione una opción</option>
+                                    <option value="unacional">Universidad Nacional</option>
+                                    <option value="udistrital">Universidad Distrital</option>
+                                    <option value="ujaveriana">Universidad Javeriana</option>
+                                </select>
+                            </div>
+
+                            <!--option sede-->
                             <div class="form-group pt-2">
-                                <label for="enombre">Tipo de universidad </label>
-                                <select class="custom-select form-control" name="universidad" id="inputGroupSelect01" placeholder="NIT">
+                                <label for="sede">Sede</label>
+                                <select class="custom-select form-control" name="sede" id="sede" placeholder="sede">
                                     <option selected="selected">Seleccione una opción</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -47,8 +58,8 @@
                             </div>
                             <div>
                                 <div class="form-group py-4">
-                                    <label for="exampleFormControlFile1">Adjuntar Foto</label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    <label for="foto">Adjuntar Foto</label>
+                                    <input type="file" class="form-control-file" id="foto" name="foto">
                                 </div>
                             </div>
                             <div class="pb-5">

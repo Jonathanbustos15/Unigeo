@@ -29,7 +29,7 @@
             <table class="table-hover table-responsive-sm">
                 <tbody>
                     <tr>
-                        <th colspan="3">Universidad</th>
+                        <th colspan="4">Universidad</th>
                     </tr>
                     <tr>
                         <td>NOMBRES</td>

@@ -13,14 +13,14 @@
 
         <div class="container">
             <div class="row bt">
-                <div class="col">
+                <div class="col-2">
                     <button type="submit" class="btn btn-info" name="registrar">Registrar</button>
                 </div>  
                 <div class="col">
                     <button type="submit" class="btn btn-info" name="registrar">Ubicacion</button>
                 </div>
                 <div class="col">
-                    <button type="submit" class="btn btn-success" name="registrar">Registro</button>
+                    <button type="submit" class="btn btn-success" name="registrar">Agregar Universidad</button>
                 </div>
             </div>
             <section class="tab">

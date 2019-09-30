@@ -21,43 +21,43 @@
             <tbody>
                 <tr>
                     <td>Proyecto</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="Proyecto.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Configuración_proyecto</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="Configuraproyecto.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Ubicación</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="Ubicacion.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Universidad</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="universidad.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Crea Universidad</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="crearuniversidad.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Detalles de Universidad</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="detuniversidad.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Crear Sede</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="crearsede.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
@@ -69,13 +69,13 @@
                 </tr>
                 <tr>
                     <td>Crear Carrera</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="crearcarrera.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
                 <tr>
                     <td>Noticias</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="noticias.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
@@ -87,7 +87,7 @@
                 </tr>
                 <tr>
                     <td>Noticia 2</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="noticias2.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>

@@ -1,6 +1,8 @@
+
+
 <?php
 
-require_once 'Conexion.php';
+require_once '../Conexion/Conexion.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

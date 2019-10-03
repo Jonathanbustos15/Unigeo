@@ -5,11 +5,10 @@
 
 <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <script src="componentes/js/Unigeo.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/prueba.css" type="text/css" />
 <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
 <script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="componentes/js/popper.min.js" type="text/javascript"></script>
-
+<link href="componentes/css/Stylelog.css" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <script>
     $(window).scroll(function () {
@@ -24,14 +23,15 @@
 
 
 <body>
+    <?php include("header.php");
+    session_start();?>
     <!-- formulario -->
 
     <section class="formulario container">
 
         <div class="row">
             <div class="panel_left col-4 d-xm-none">
-
-                <img alt="logo" class="img-fluid" src="../web/images/unigeo.png">
+                <img src="componentes/images/unigeo.png" alt="Logo"/>
             </div>
 
             <div class="panel_right col-8">
@@ -42,8 +42,7 @@
 
                 <form class="p-4" action="../Controlador/ControlLogin.php" method="post">
                     <!-- titulo -->
-
-
+          
                     <!-- nombre -->
                     <div class="form-group row">
                         <div class="col-md-12">
@@ -80,7 +79,7 @@
             </div>
         </div>
         <?php
-        session_start();
+        
         if (!empty($_SESSION["mensajeu"])) {
             echo "<span class='m-5 px-5 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
             session_destroy();
@@ -103,7 +102,7 @@
                     <!-- Modal body -->
                     <div class="modal-body">
                         <form class="p-5" action="../controlador/controlReset.php" name="registro" id="registro" method="post">
-                        
+                            
                         <div class="col-md-12">
 
                             <div class="panel-body">

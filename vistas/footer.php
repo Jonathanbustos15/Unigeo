@@ -7,6 +7,7 @@
         <title>UniGeo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="componentes/css/stylefoot.css" rel="stylesheet" type="text/css"/>
+         <script src="componentes/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
         <!-- Footer -->

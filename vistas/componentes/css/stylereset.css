@@ -2,7 +2,7 @@ h1 {
     color: #17a2b8;
 }
 
-body {
+/*body {
     margin: 0 auto;
     background-image: url("../images/fondoa.jpg");
     background-repeat: no-repeat center center fixed;
@@ -12,10 +12,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 
 
-.formulario {
+.formulariores {
   position: relative;
   width: 657px;
   height: auto;
@@ -81,6 +81,6 @@ p {
 }
 
 
-.navbar {
+/*.navbar {
   background-color: rgba(67, 123, 157, .5) !important;
-}
+}*/

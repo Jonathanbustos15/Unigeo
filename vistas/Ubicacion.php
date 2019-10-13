@@ -103,7 +103,7 @@
                 </div>
                 <div class="col-6 a2 ml-5">
                     <div class="map">
-                        <img src="componentes/images/Mapabpng.png" width="800" height="500" alt=""/>
+                        <iframe src="https://qgiscloud.com/cristian_valencia/Unigeo/?bl=&st=&l=Google%20maps%2CUniversidades&t=Unigeo&e=-74.38148%2C4.50455%2C-73.77234%2C4.78294" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
 

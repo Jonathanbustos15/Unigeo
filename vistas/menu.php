@@ -5,7 +5,12 @@
 <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
 <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="componentes/css/StyleMenu.css" rel="stylesheet" type="text/css"/>
-
+<script src="componentes/js/stacktable.js" type="text/javascript"></script>
+<script type=”text/javascript”>
+    $(document).ready(function () {
+        $(‘#table1′).stacktable();
+    });
+</script>
 <body>
     <?php include("header.php"); ?>
 
@@ -17,7 +22,7 @@
         </div>
     </div>
     <section class="mg">
-        <table class="table1 table-hover table-responsive-sm menu">
+        <table id="table1" class="table1 table-hover table-responsive-sm menu">
             <tbody>
                 <tr>
                     <td>Proyecto</td>
@@ -63,7 +68,7 @@
                 </tr>
                 <tr>
                     <td>Detalle Sede</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="detsede.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>
@@ -81,7 +86,7 @@
                 </tr>
                 <tr>
                     <td>Crea Noticia</td>
-                    <td>  <a class="btnb" href="#">Opcion 1</a></td>
+                    <td>  <a class="btnb" href="crearnoticia.php">Opcion 1</a></td>
                     <td>  <a class="btnb" href="#">Opcion 2</a></td>
                     <td>  <a class="btnb" href="#">Opcion 3</a></td>
                 </tr>

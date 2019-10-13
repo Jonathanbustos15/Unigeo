@@ -58,7 +58,7 @@ td {
 th{
     text-justify:auto;
     height: 2em;
-    padding-left: 26em;
+    text-align: center !important;
     white-space: nowrap;  
     color:#ac0707;
     font-size: 1.2em;

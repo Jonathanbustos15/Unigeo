@@ -40,7 +40,7 @@ class ModeloLogin {
                     $_SESSION['login'] = true;
                     header('Location: ../vistas/index.html');
                 } else {
-                    $_SESSION['mensajeu'] = "Contraseña incorrecta, intenta de nuevo";
+                    $_SESSION['mensajeu'] = "Usuario o contraseña incorrecta, intenta de nuevo";
                     header('Location: ../vistas/Login.php');
                 }
             }
@@ -49,7 +49,7 @@ class ModeloLogin {
         }
     }
 
-    public function recpass($usuario) {
+    public function recpass($usuario) {//Verifica que el usuario este registrado en la base de datos
         try {
 
             $sql = "SELECT * FROM usuario WHERE Email = ?";
@@ -65,7 +65,7 @@ class ModeloLogin {
                 header('Location: ../vistas/Login.php');
             } else {
                 $rs = array("correo" => $row['Email'], "nombre" => $row['Nombre'], "apellido" => $row['Apellido']);
-//header('Location: ../web/registro.php');
+
             }
         } catch (Exception $e) {
             echo $e->getMessage();
@@ -74,13 +74,13 @@ class ModeloLogin {
         return $rs;
     }
 
-    public function fechact() {
+    public function fechact() {//establece la hora y fecha actual
         date_default_timezone_set('America/Bogota');
         $this->fechact = date('Y-m-d H:i');
         return $this->fechact;
     }
 
-    public function fechaven() {
+    public function fechaven() {//Establece la hora de vencimiento del codigo de reseteo
         date_default_timezone_set('America/Bogota');
         $fechact = date('Y-m-d H:i');
         $fechat = strtotime('+1 hour', strtotime($fechact));
@@ -88,7 +88,7 @@ class ModeloLogin {
         return $fechaven;
     }
 
-    public function token() {
+    public function token() {//genera un codigo aleatorio
         $this->token = bin2hex(random_bytes(5));
         return $this->token;
     }

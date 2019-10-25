@@ -1,5 +1,5 @@
 <?php
-	require_once "./php/conexion.php";
+	require_once "../Conexion/conexion.php";
 	$conexion=conexion();
 		$query="SELECT id_universidad, Nit, Nombre,Direccion,Cx,Cy, Telefono, Email, Estado
 						from universidad";
@@ -33,10 +33,10 @@
 				$.ajax({
 					type:"POST",
 					data:'valor=' + $('#buscadorvivo').val(),
-					url:'componentes/php/crearsession.php',
+			    url: '../Modelo/crearsession.php',
 					success:function(r){
 						console.log("Mensaje " + r);
-						$('#tabla').load('componentes/tabla.php');
+						$('#tabla').load('tabla.php');
 					}
 				});
 			});

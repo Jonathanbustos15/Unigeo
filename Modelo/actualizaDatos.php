@@ -1,5 +1,5 @@
 <?php
-	require_once "conexion.php";
+	require_once "../Conexion/conexion.php";
 	$conexion=conexion();
 
 	$id_universidad=$_POST['id_universidad'];
@@ -20,7 +20,7 @@
 								cx='$cx',
 								cy='$cy',
 								telefono='$telefono',
-								email='$email'							
+								email='$email'
 				WHERE id_universidad= '$id_universidad'";
 
 	echo $result=pg_query($sql);

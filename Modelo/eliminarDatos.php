@@ -1,6 +1,6 @@
 
 <?php
-	require_once "conexion.php";
+	require_once "../Conexion/conexion.php";
 	$conexion=conexion();
 	$id_universidad=$_POST['id_universidad'];
 

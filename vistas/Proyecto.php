@@ -18,6 +18,7 @@
                 <div class="row d-flex justify-content-center">
                     <img src="componentes/images/mapa2.PNG" alt=""/>
                     
+                    
                 </div>
                 <section>
                     <div class="panel">

@@ -6,6 +6,7 @@
     <?php include("header.php"); ?>
     <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
     <link href="componentes/css/Stylenoticias2.css" rel="stylesheet" type="text/css"/>
+    <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <body>
         <div class="container">
             <div class="row bt">

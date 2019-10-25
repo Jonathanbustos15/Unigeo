@@ -103,15 +103,16 @@
                 </div>
                 <div class="col-6 a2 ml-5">
                     <div class="map">
-                        <iframe src="https://qgiscloud.com/cristian_valencia/Unigeo/?bl=&st=&l=Google%20maps%2CUniversidades&t=Unigeo&e=-74.38148%2C4.50455%2C-73.77234%2C4.78294" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://qgiscloud.com/cristian_valencia/Unigeo/?bl=&st=&l=Google%20maps%2CUniversidades&t=Unigeo&e=-74.31279%2C4.53582%2C-73.84103%2C4.75167" width="800" height="450" frameborder="0"></iframe>
+
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-   <section class="tab">
-       
+    <section class="tab">
+
         <table class="table-hover table-responsive-sm">
             <tbody>
                 <tr>
@@ -121,17 +122,17 @@
                     <td>NOMBRE</td>
                     <td>SNIES</td>
                     <td>VALOR</td>
-                   
+
                 </tr>
                 <tr>
                     <td>NOMBRE1</td>
                     <td>17892</td>
                     <td>$1564812</td>
-                   
+
                 </tr>
             </tbody>
         </table>
-</html>
+    </html>
 </body>
 
 

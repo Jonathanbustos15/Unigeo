@@ -48,6 +48,7 @@ input {
   word-wrap: break-word;
   color: rgb(228, 224, 224);
   border-left: rgb(228, 224, 224);
+  background: none;
 }
 
 .a-rest:hover {
@@ -125,6 +126,3 @@ img {
 }
 
 
-.navbar {
-  background-color: rgba(67, 123, 157, .5) !important;
-}

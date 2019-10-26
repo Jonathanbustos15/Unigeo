@@ -7,8 +7,7 @@
     <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
     <link href="componentes/css/Stylreguniversidad.css" rel="stylesheet" type="text/css"/>
-    <?php include("header.php"); ?>
-
+   
     <body>
         <?php include("header.php"); ?>
         <div class="container">

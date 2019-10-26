@@ -2,12 +2,13 @@
 <html>
     <title>noticias</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <?php include("header.php"); ?>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.1, maximum-scale=0.1, minimum-scale=1.0">
     <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
-    <link href="componentes/css/Stylenoticias2.css" rel="stylesheet" type="text/css"/>
     <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="componentes/css/Stylenoticias2.css" rel="stylesheet" type="text/css"/>
+
     <body>
+        <?php include("header.php"); ?>
         <div class="container">
             <div class="row bt">
                 <div class="col-6">
@@ -60,7 +61,7 @@
                 <div class="col-5">
                     <img class="imag" src="componentes/images/antonio.jpg" alt=""/>
                 </div>
-               
+
                 <div class="col-6 info">
                     <div>
                         <ul class="list-group list-group-flush">

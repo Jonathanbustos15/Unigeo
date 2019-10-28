@@ -2,7 +2,7 @@
 
 <?php
 
-require_once '../Conexion/Conexion.php';
+require_once '../conexion/Conexion.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -21,7 +21,7 @@ class ModeloLogin {
 
     public function checklogin($usuario, $password) {
         try {
-            session_start();
+            //session_start();
             $sql = "select * FROM usuario WHERE Email = ?";
             $connect = conexion::con();
             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -65,7 +65,6 @@ class ModeloLogin {
                 header('Location: ../vistas/Login.php');
             } else {
                 $rs = array("correo" => $row['Email'], "nombre" => $row['Nombre'], "apellido" => $row['Apellido']);
-
             }
         } catch (Exception $e) {
             echo $e->getMessage();

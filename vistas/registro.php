@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-require_once '../Modelo/Conexion.php';
+require_once '../Conexion/Conexion.php';
 ?>
 
 <html>
@@ -9,7 +9,7 @@ require_once '../Modelo/Conexion.php';
     <head>
         <title>Registro</title>
         <meta charset="UTF-8">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="componentes/css/StyleRegistro.css" rel="stylesheet" type="text/css"/>
         <link href="css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
         <link href="css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
@@ -23,10 +23,10 @@ require_once '../Modelo/Conexion.php';
 
     </head>
 
-    <?php
-    include 'Header.php';
-    ?>
     <body  onload="doOnLoad();">
+        <?php
+        include 'Header.php';
+        ?>
         <h1>
             <?php
             if (!empty($_SESSION["gmensaje"])) {
@@ -140,12 +140,12 @@ require_once '../Modelo/Conexion.php';
                     if (!empty($_SESSION["ermensaje"])) {
                         $error = $_SESSION["ermensaje"];
                         echo '<script language="javascript">';
-                                            
+
                         echo 'dhtmlx.alert({title: "Error!",
                               type: "confirm-error",
-                              text: "' . $error . '"});';                        
+                              text: "' . $error . '"});';
                         echo '</script>';
-                           session_destroy();
+                        session_destroy();
                     } else {
                         
                     }

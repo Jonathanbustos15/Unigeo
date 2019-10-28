@@ -1,7 +1,30 @@
-<?php 
-//conectamos con el servidor
-		function conexion(){
-          $conectar= pg_connect("host='localhost' dbname=unigeo port=5432 user=postgres password=123456") or die ("Error de Conexion".pg_last_error());
-          return $conectar;
-          }
- ?>
+<?php
+
+require("config.php");
+session_start();
+
+class conexion {
+
+    public static function con() {
+
+        try {
+
+            $con = new PDO('mysql:host=' . DBHOST . '; dbname=' . DBNAME, DBUSER, DBPASS);
+
+            $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
+
+            $con->exec("SET CHARACTER SET utf8");
+
+            return $con;
+        } catch (Exception $e) {
+
+            'Error: ' . $e->getMessage();
+            $_SESSION["ermensaje"] = $e->getMessage();
+            return $_SESSION["ermensaje"];
+        }
+    }
+
+}
+
+?>

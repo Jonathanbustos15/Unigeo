@@ -22,9 +22,8 @@ class ModeloLogin {
     public function checklogin($usuario, $password) {
         try {
             //session_start();
-            $sql = "select * FROM usuario WHERE Email = ?";
-            $connect = conexion::con();
-            $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "select * FROM usuario WHERE email_usuario = ?";
+            $connect = Conexion::con();
             $query = $connect->prepare($sql);
             $query->bindParam(1, $usuario, PDO::PARAM_STR);
             $query->execute();
@@ -53,7 +52,7 @@ class ModeloLogin {
         try {
 
             $sql = "SELECT * FROM usuario WHERE Email = ?";
-            $connect = conexion::con();
+            //$connect = conexion::con();
             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $connect->prepare($sql);
             $query->bindParam(1, $usuario, PDO::PARAM_STR);
@@ -133,7 +132,7 @@ class ModeloLogin {
     public function newpas($usuario, $token, $fecven) {
         try {
             $sql = "UPDATE usuario SET CodRec=?, codven=? WHERE email=?";
-            $connect = conexion::con();
+            //$connect = conexion::con();
             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $connect->prepare($sql);
             $query->bindParam(1, $token, PDO::PARAM_STR);

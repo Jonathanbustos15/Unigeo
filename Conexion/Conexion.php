@@ -1,40 +1,41 @@
 <?php
 
-require("config.php");
-session_start();
+class Conexion {
 
-class conexion {
+    private static $conexion;
 
     public static function con() {
 
-        try {
+        if (!isset($conexion)) {
 
-            $con = new PDO('pgsql:host=' . DBHOST . '; dbname=' . DBNAME . '; dbname=' . DBPORT, DBUSER, DBPASS);
+            try {
+                include_once 'config.php';
 
-            $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $conexion = new PDO('pgsql:host=' . DBHOST . '; dbname=' . DBNAME . '; port=' . DBPORT, DBUSER, DBPASS);
+                $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $conexion->exec("SET NAMES 'UTF8'");
+                return $conexion;
+            } catch (PDOException $ex) {
+                print "ERROR " . $ex->getMessage() . "<br>";
+            }
+        }
+    }
 
+    public static function cerrarConexion() {
+        if (isset(self::$conexion)) {
+            self::$conexion = null;
+        }
+    }
 
-            $con->exec("SET CHARACTER SET utf8");
+    public static function obtenerConexion() {
 
-            return $con;
-        } catch (Exception $e) {
-
-            'Error: ' . $e->getMessage();
-            $_SESSION["ermensaje"] = $e->getMessage();
-            return $_SESSION["ermensaje"];
+        if (isset(self::$conexion)) {
+            echo "Conexion establecida";
+        } else {
+            echo "No se pudo conectar con la base de datos postrgresql";
         }
     }
 
 }
 
-try {
-
-    $conn = new PDO('pgsql:host=' . DBHOST . '; dbname=' . DBNAME . '; port=' . DBPORT, DBUSER, DBPASS);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo "ERROR: " . $e->getMessage();
-}
-$query = "select * FROM usuario";
-$sql = $conn->prepare($query);
-$sql->execute();
 ?>

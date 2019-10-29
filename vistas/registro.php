@@ -10,15 +10,15 @@ require_once '../Conexion/Conexion.php';
         <title>Registro</title>
         <meta charset="UTF-8">
         <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="componentes/css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
+        <link href="componentes/css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
+        <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
+        <script src="componentes/js/message.js" type="text/javascript"></script>
+        <script src="componentes/js/Unigeo.js" type="text/javascript"></script>
+        <script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="componentes/js/dhtmlxcalendar.js" type="text/javascript"></script>
+        <script src="componentes/js/controlpass.js" type="text/javascript"></script>
         <link href="componentes/css/StyleRegistro.css" rel="stylesheet" type="text/css"/>
-        <link href="css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
-        <link href="css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
-        <script src="js/bootstrap.js" type="text/javascript"></script>
-        <script src="js/message.js" type="text/javascript"></script>
-        <script src="js/Unigeo.js" type="text/javascript"></script>
-        <script src="js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
-        <script src="js/dhtmlxcalendar.js" type="text/javascript"></script>
-        <script src="js/controlpass.js" type="text/javascript"></script>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
 
     </head>

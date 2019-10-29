@@ -5,33 +5,39 @@
         <title>Registro</title>
         <meta charset="UTF-8">
 
-        <link href="../web/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <!--<link href="../web/css/StyleRegistro.css" rel="stylesheet" type="text/css"/>-->
-        <script src="../web/js/bootstrap.js" type="text/javascript"></script>
-        <script src="../web/js/message.js" type="text/javascript"></script>
-        <link href="../web/css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0   ">
+        <link href="../vistas/componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="../vistas/componentes/js/message.js" type="text/javascript"></script>
+        <link href="../vistas/componentes/css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <?php
-    include '../Modelo/ModelRegistro.php';
-    require_once '../Modelo/Conexion.php';
-    $fun = new ModelRegistro();
     try {
+        session_start();
+        include '../Modelo/ModelRegistro.php';
+        require_once '../conexion/conexion.php';
+        $fun = new ModelRegistro();
+
         $fun->nombre = (htmlspecialchars($_POST['nombre']));
         $fun->apellido = (htmlspecialchars($_POST['apellido']));
         $fun->email = (htmlspecialchars($_POST['mail']));
         $fun->fecnacimiento = (htmlspecialchars($_POST['fecha']));
-        $fun->localidad = (htmlspecialchars($_POST['localidad']));
-        $fun->sexo = (htmlspecialchars($_POST['sexo']));
+        //$fun->localidad = (htmlspecialchars($_POST['localidad']));
+        //$fun->sexo = (htmlspecialchars($_POST['sexo']));
         $fun->password = (htmlspecialchars($_POST['password1']));
         $fun->insertar();
-        
+
         if ($fun->mensaje) {
-            $_SESSION["gmensaje"] = true;
+            //$_SESSION["gmensaje"] = true;
+            $_SESSION["gmensaje"] = 'bien';
         }
     } catch (Exception $e) {
         echo "error: " . $e->getMessage();
+        $_SESSION["gmensaje"] = $e->getMessage();
+        $_SESSION["gmensaje"] = 'error';
     }
+   
+    echo "<span class='m-5 px-5 text-danger'>" .  $_SESSION["ermensaje"] . "</span>";
 
-    header('Location: ../web/registro.php');
+    //header('Location: ../vistas/newEmptyPHP.php');
     

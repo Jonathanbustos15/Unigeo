@@ -21,7 +21,7 @@ class ModeloLogin {
 
     public function checklogin($usuario, $password) {
         try {
-            //session_start();
+            session_start();
             $sql = "select * FROM usuario WHERE email_usuario = ?";
             $connect = Conexion::con();
             $query = $connect->prepare($sql);
@@ -30,7 +30,7 @@ class ModeloLogin {
             $row = $query->fetch(PDO::FETCH_ASSOC);
             if ($query->rowCount() < 1) {
                 $_SESSION['mensajeu'] = "Usuario no existe, intenta de nuevo";
-                header('Location: ../vistas/Login.php');
+                header('Location: ../vistas/newEmptyPHP.php');
             } else {
                 $hash = $row['Password'];
                 if (password_verify($password, $hash)) {
@@ -51,7 +51,7 @@ class ModeloLogin {
     public function recpass($usuario) {//Verifica que el usuario este registrado en la base de datos
         try {
 
-            $sql = "SELECT * FROM usuario WHERE Email = ?";
+            $sql = "select * FROM usuario WHERE email_usuario = ?";
             //$connect = conexion::con();
             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $connect->prepare($sql);

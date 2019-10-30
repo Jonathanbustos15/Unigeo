@@ -32,7 +32,7 @@ class ModeloLogin {
                 $_SESSION['mensajeu'] = "Usuario no existe, intenta de nuevo";
                 header('Location: ../vistas/newEmptyPHP.php');
             } else {
-                $hash = $row['Password'];
+                $hash = $row['password'];
                 if (password_verify($password, $hash)) {
                     session_start();
                     $_SESSION['usuario'] = $usuario;
@@ -42,10 +42,12 @@ class ModeloLogin {
                     $_SESSION['mensajeu'] = "Usuario o contraseña incorrecta, intenta de nuevo";
                     header('Location: ../vistas/Login.php');
                 }
+              
             }
         } catch (Exception $e) {
-            echo $e->getMessage();
+            $_SESSION['mensajeu'] = $e->getMessage();
         }
+          $_SESSION['mensajeu'] = $e->getMessage();
     }
 
     public function recpass($usuario) {//Verifica que el usuario este registrado en la base de datos

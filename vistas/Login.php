@@ -80,9 +80,11 @@
         </div>
         <?php
         if (!empty($_SESSION["mensajeu"])) {
+              $_SESSION['mensajeu'] = 'Usuario o contraseña incorrecta, intenta de nuevo';
             echo "<span class='m-5 px-5 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
             session_destroy();
         }
+         echo "<span class='m-5 px-5 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
         ?>
     </section>
 

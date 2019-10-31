@@ -23,12 +23,12 @@ class ModelRegistro {
             $conect = conexion::con();
             $fecha = date("Y-m-d", strtotime($this->fecnacimiento));
             $pass = password_hash($this->password, PASSWORD_DEFAULT);
-            $sql = "insert into usuario (id_usuario, nombre_usuario, apellido_usuario, fecha_nacimiento, id_ciudad, direccion_usuario,"
+            $sql = "insert into usuario (id_Usuario, nombre_usuario, apellido_usuario, fecha_nacimiento, id_ciudad, direccion_usuario,"
                     . " telefono_usuario, email_usuario, password, id_tipo_usuario, estado)";
             $sql .= " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?)";
             $conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $conect->prepare($sql);
-            $query->bindValue(1, 1);
+            $query->bindValue(1, 10);
             $query->bindValue(2, $this->nombre);
             $query->bindValue(3, $this->apellido);
             $query->bindValue(4, $fecha);

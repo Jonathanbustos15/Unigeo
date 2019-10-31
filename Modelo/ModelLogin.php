@@ -18,6 +18,7 @@ class ModeloLogin {
     public $password;
     public $mensaje;
     public $fecven;
+    
 
     public function checklogin($usuario, $password) {
         try {
@@ -29,17 +30,17 @@ class ModeloLogin {
             $query->execute();
             $row = $query->fetch(PDO::FETCH_ASSOC);
             if ($query->rowCount() < 1) {
-                $_SESSION['mensajeu'] = "Usuario no existe, intenta de nuevo";
-                header('Location: ../vistas/newEmptyPHP.php');
+                $_SESSION['mensajeu'] = true;
+                header('Location: ../vistas/Login.php');
             } else {
                 $hash = $row['password'];
                 if (password_verify($password, $hash)) {
                     session_start();
                     $_SESSION['usuario'] = $usuario;
                     $_SESSION['login'] = true;
-                    header('Location: ../vistas/index.html');
+                    header('Location: ../vistas/proyecto.php');
                 } else {
-                    $_SESSION['mensajeu'] = "Usuario o contraseña incorrecta, intenta de nuevo";
+                    $_SESSION['mensajeu'] = true;
                     header('Location: ../vistas/Login.php');
                 }
               

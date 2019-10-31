@@ -23,8 +23,8 @@
 
 
 <body>
-    <?php include("header.php");?>
-    
+    <?php include("header.php"); ?>
+
     <!-- formulario -->
 
     <section class="formulario container">
@@ -79,12 +79,12 @@
             </div>
         </div>
         <?php
-        if (!empty($_SESSION["mensajeu"])) {
-              $_SESSION['mensajeu'] = 'Usuario o contraseña incorrecta, intenta de nuevo';
-            echo "<span class='m-5 px-5 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
+      
+        if ($_SESSION['mensajeu']) {
+            echo "<span class='m-5 px-5 text-danger'>" .  'Usuario o contraseña incorrecta, intenta de nuevo' . "</span>";
             session_destroy();
         }
-         echo "<span class='m-5 px-5 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
+     
         ?>
     </section>
 

@@ -22,7 +22,9 @@
         $fun->apellido = (htmlspecialchars($_POST['apellido']));
         $fun->email = (htmlspecialchars($_POST['mail']));
         $fun->fecnacimiento = (htmlspecialchars($_POST['fecha']));
-        //$fun->localidad = (htmlspecialchars($_POST['localidad']));
+        $fun->id_ciudad = (htmlspecialchars($_POST['ciudad']));
+        $fun->direccion = (htmlspecialchars($_POST['direccion']));
+        $fun->telefono = (htmlspecialchars($_POST['telefono']));
         //$fun->sexo = (htmlspecialchars($_POST['sexo']));
         $fun->password = (htmlspecialchars($_POST['password1']));
         $fun->insertar();
@@ -36,8 +38,7 @@
         $_SESSION["gmensaje"] = $e->getMessage();
         $_SESSION["gmensaje"] = 'error';
     }
-   
-    echo "<span class='m-5 px-5 text-danger'>" .  $_SESSION["ermensaje"] . "</span>";
+    
 
-    //header('Location: ../vistas/newEmptyPHP.php');
+    header('Location: ../vistas/registro.php');
     

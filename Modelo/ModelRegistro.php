@@ -23,22 +23,22 @@ class ModelRegistro {
             $conect = conexion::con();
             $fecha = date("Y-m-d", strtotime($this->fecnacimiento));
             $pass = password_hash($this->password, PASSWORD_DEFAULT);
-            $sql = "insert into usuario (id_Usuario, nombre_usuario, apellido_usuario, fecha_nacimiento, id_ciudad, direccion_usuario,"
+            $sql = "insert into usuario (nombre_usuario, apellido_usuario, fecha_nacimiento, id_ciudad, direccion_usuario,"
                     . " telefono_usuario, email_usuario, password, id_tipo_usuario, estado)";
-            $sql .= " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?)";
+            $sql .= " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             $conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $conect->prepare($sql);
-            $query->bindValue(1, 10);
-            $query->bindValue(2, $this->nombre);
-            $query->bindValue(3, $this->apellido);
-            $query->bindValue(4, $fecha);
-            $query->bindValue(5, 1);
-            $query->bindValue(6, 1);
-            $query->bindValue(7, 2564558);
-            $query->bindValue(8, $this->email);
-            $query->bindValue(9, $pass);
-            $query->bindValue(10,1);
-            $query->bindValue(11, 1);
+            //query->bindValue(1, 1);
+            $query->bindValue(1, $this->nombre);
+            $query->bindValue(2, $this->apellido);
+            $query->bindValue(3, $fecha);
+            $query->bindValue(4, $this->id_ciudad);
+            $query->bindValue(5, $this->direccion);
+            $query->bindValue(6, $this->telefono);
+            $query->bindValue(7, $this->email);
+            $query->bindValue(8, $pass);
+            $query->bindValue(9,5);
+            $query->bindValue(10, 1);
             $query->execute();
             if ($query) {
                 $this->mensaje = true;

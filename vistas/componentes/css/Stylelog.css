@@ -4,14 +4,7 @@ h1 {
 
 body {
     margin: 0 auto;
-    background-image: url("../images/fondoa.jpg");
-    background-repeat: no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    
 }
 
 
@@ -20,7 +13,7 @@ body {
   width: 657px;
   height: auto;
   background: rgba(0, 0, 0, 0.6);
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding: 20px;
 }
 
@@ -106,6 +99,18 @@ img {
 .rest {
   color: rgb(112, 111, 111);
 }
+
+input {
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    height: 1.7em !important;
+    padding: 0.5em !important;
+}
+
+.container {
+    margin: 8% auto  !important;
+    max-width: 600px !important;
+    
+}  
 
 /* reponsive */
 

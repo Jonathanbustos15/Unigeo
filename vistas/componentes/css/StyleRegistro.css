@@ -1,21 +1,13 @@
-h1 {
+h2 {
     color: #17a2b8;
 }
 
 body {
     margin: 0 auto;
-    background-image: url("../images/fondoa.jpg");
-    background-repeat: no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .formulario {
-    margin: 5% auto 3% auto;
+    margin: auto !important;
     /*margin: 10% auto;*/
     background: rgba(0, 0, 0, 0.6);
     color: white;
@@ -27,9 +19,7 @@ hr {
 }
 
 .bt-sub {
-    margin:0 25em;
-    padding: 50px;
-   
+    margin: auto 17em 1em;
 }
 
 input[type='date']:after {
@@ -40,32 +30,50 @@ input[type='date']:after {
 
 input {
     box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    height: 1.7em !important;
+    padding: 0.5em !important;
 }
 
+select{
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    height: 1.7em !important;
+    padding:0em 0.7em !important;
+
+}
+
+
 label {
-    margin-left: 5%;
+    margin-left: 0%;
 }
 
 
 .invalid {
-   font-size: 0.8rem;
-    
+    font-size: 0.8rem;
+
     color:#ec3f41;
 }
 .valid {
-   font-size: 0.8rem;
-    
+    font-size: 0.8rem;
+
     color:#3a7d34;
 }
- #pswd_info {
-     display:none;
- }
+#pswd_info {
+    display:none;
+}
 
- .infopass{
-     
-     
-     
- }
+.container {
+    margin: 6% auto  !important;
+    max-width: 850px !important;
+    max-height: 100% !important;
+
+}  
+.form-group {
+    margin-bottom: 0.4rem !important;
+}
+
+.infopass{
+
+}
 
 @media only screen and (max-width: 600px) {
     .formulario {

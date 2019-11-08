@@ -16,7 +16,7 @@ $usuario = $_POST['emailr'];
 $dts = array();
 $dts = $fun->recpass($usuario);
 $token = 1;//$fun->token();
-$fecven = $fun->fechaven();
+$fecven = 1;// $fun->fechaven();
 $nombre = $dts['nombre'];
 $apellido = $dts['apellido'];
 try {

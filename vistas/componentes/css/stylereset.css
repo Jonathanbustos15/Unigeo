@@ -2,26 +2,9 @@ h1 {
     color: #17a2b8;
 }
 
-/*body {
-    margin: 0 auto;
-    background-image: url("../images/fondoa.jpg");
-    background-repeat: no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}*/
-
-
-.formulariores {
-  position: relative;
-  width: 657px;
-  height: auto;
+.formulario {
   background: rgba(0, 0, 0, 0.6);
-  margin: 10rem auto;
-  padding: 20px;
+
 }
 
 hr {
@@ -29,15 +12,12 @@ hr {
   border-top: 10px solid rgb(255, 255, 255);
 }
 
-.bt-sub {
-  margin-bottom: 4%;
-  display: block;
-}
+
 
 input {
-  color: #6c757d;
-  height: 27px;
-  opacity: 1;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    height: 1.7em !important;
+    padding: 0.5em !important;
 }
 
 .check {
@@ -58,10 +38,18 @@ p {
   line-height: 100%;
   border-bottom: 1px solid #bbb;
   margin: 0;
-  padding-bottom: 7px;
+  padding: .7em;
 }
 
-
+.text-muted{
+    color: #cacfd2 !important;
+    
+}
+.container {
+    margin: 8% auto  !important;
+    max-width: 450px !important;
+    
+}  
 /* reponsive */
 
 @media only screen and (max-width: 600px) {

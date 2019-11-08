@@ -37,14 +37,16 @@ class ModelRegistro {
             $query->bindValue(6, $this->telefono);
             $query->bindValue(7, $this->email);
             $query->bindValue(8, $pass);
-            $query->bindValue(9,5);
+            $query->bindValue(9, 1);
             $query->bindValue(10, 1);
             $query->execute();
             if ($query) {
-                $this->mensaje = true;
-            }else{$_SESSION["ermensaje"] = 'Error: ' . $e->getMessage();}
+                $_SESSION["gmensaje"] = 'Usuario registrado correctamente';
+            } else {
+                $_SESSION["rmensaje"] = 'Error: ' . $e->getMessage();
+            }
         } catch (Exception $e) {
-            $_SESSION["ermensaje"] = 'Error: ' . $e->getMessage();
+            $_SESSION["rmensaje"] = 'Error: ' . $e->getMessage();
         }
     }
 

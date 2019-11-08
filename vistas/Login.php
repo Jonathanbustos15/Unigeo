@@ -51,7 +51,7 @@
                     <!-- apellido-->
                     <div class="form-group row ">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" id="password" name="password" value="80161528" placeholder="Contraseña">
+                            <input type="text" class="form-control" id="password" name="password" value="Aaa111**" placeholder="Contraseña">
                         </div>
                     </div>
 

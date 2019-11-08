@@ -26,7 +26,7 @@ require_once '../Conexion/Conexion.php';
     <body  onload="doOnLoad();">
         <?php
         session_start();
-        session_destroy();
+
         include 'Header.php';
         ?>
         <h1>
@@ -138,7 +138,7 @@ require_once '../Conexion/Conexion.php';
                         <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirme su contraseña" value="Aaa111**">
                     </div>
                 </div>
-               
+
                 <div class="">
                     <div class="bt-sub">
                         <button type="button" id="enviar" name="enviar" class="btn btn-outline-info" onclick="pass();" >Crear cuenta</button>
@@ -154,19 +154,9 @@ require_once '../Conexion/Conexion.php';
                                             </div>
                                         </div>-->
                     <?php
-                    if (!empty($_SESSION["gmensaje"])) {
-                        $error = $_SESSION["gmensaje"];
-                        echo $_SESSION["gmensaje"];
-                        echo $_SESSION["ermensaje"];
-                        echo '<script language="javascript">';
-
-                        echo 'dhtmlx.alert({title: "Error!",
-                              type: "confirm-error",
-                              text: "' . $error . '"});';
-                        echo '</script>';
+                    if (!empty($_SESSION["rmensaje"])) {
+                        echo "<span class=' m-3 px-5 alert-danger'>" . $_SESSION["rmensaje"] . "</span>";
                         session_destroy();
-                    } else {
-                        
                     }
                     ?>
                 </div>
@@ -174,7 +164,11 @@ require_once '../Conexion/Conexion.php';
             </div>
         </section>
 
-
+        <script type="text/javascript">
+            $(".alert-danger").delay(4000).slideUp(200, function () {
+                $(this).alert('close');
+            });
+        </script>
         <?php
         include 'footer.php';
         ?>

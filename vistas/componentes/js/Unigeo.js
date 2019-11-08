@@ -13,7 +13,7 @@ function boxB() {
         top: '400',
         buttons: ["Aceptar"],
         callback: function() {location.href ="Login.php";},
-        buttons: ["cancelar"]
+        buttons: ["Aceptar"]
     });
 }
 

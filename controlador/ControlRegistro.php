@@ -25,18 +25,13 @@
         $fun->id_ciudad = (htmlspecialchars($_POST['ciudad']));
         $fun->direccion = (htmlspecialchars($_POST['direccion']));
         $fun->telefono = (htmlspecialchars($_POST['telefono']));
-        //$fun->sexo = (htmlspecialchars($_POST['sexo']));
         $fun->password = (htmlspecialchars($_POST['password1']));
         $fun->insertar();
-
-        if ($fun->mensaje) {
-            //$_SESSION["gmensaje"] = true;
-            $_SESSION["gmensaje"] = 'bien';
-        }
+        
     } catch (Exception $e) {
         echo "error: " . $e->getMessage();
-        $_SESSION["gmensaje"] = $e->getMessage();
-        $_SESSION["gmensaje"] = 'error';
+        $_SESSION["rmensaje"] = $e->getMessage();
+                 
     }
     
 

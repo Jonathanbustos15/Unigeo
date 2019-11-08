@@ -1,9 +1,17 @@
 
 .footer-style {
-  position: fixed;
-  bottom: 0;
-  clear: both;
-  width: 100%;
-  color: #fff;
-  background-color: rgba(67, 123, 157, .5);
+    position: fixed;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    background-color: rgba(67, 123, 157, .5);
+    display: table;
+    vertical-align: middle;
+    color: #fff;
+     margin: auto auto; 
+
+}
+p {
+    text-height: ;
+    color: #fff;
 }

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <title>Login</title>
 <meta charset="UTF-8">
-
-
 <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <script src="componentes/js/Unigeo.js" type="text/javascript"></script>
 <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
@@ -21,17 +19,17 @@
 </script>
 
 
-
 <body>
-    <?php include("header.php"); ?>
-
+    <?php include("header.php");
+    
+    ?>
     <!-- formulario -->
 
     <section class="formulario container">
 
         <div class="row">
             <div class="panel_left col-4 d-xm-none">
-                <img src="componentes/images/unigeo.png" alt="Logo"/>
+                <img src="componentes/images/unigeo.png" height="280px" alt="Logo"/>
             </div>
 
             <div class="panel_right col-8">
@@ -62,8 +60,6 @@
                         <label class="custom-control-label check" for="customCheck1">Recordarme en este equipo</label>
                     </div>
                     <br>
-
-
                     <div class="row">
                         <div class="bt-sub">
                             <button type="submit" class="bt-sub btn btn-info">Ingresar</button>
@@ -79,13 +75,20 @@
             </div>
         </div>
         <?php
-      
-        if ($_SESSION['mensajeu']) {
-            echo "<span class='m-5 px-5 text-danger'>" .  'Usuario o contraseña incorrecta, intenta de nuevo' . "</span>";
+        if (!empty($_SESSION["mensajeu"])) {
+           echo "<span class=' m-3 px-5 alert-danger'>" . $_SESSION["mensajeu"] . "</span>";
             session_destroy();
         }
-     
+         
         ?>
+         
+        <script type="text/javascript">
+$(".alert-danger").delay(4000).slideUp(200, function() {
+    $(this).alert('close');
+});
+</script>
+        
+        
     </section>
 
     <aside>

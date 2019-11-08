@@ -46,7 +46,7 @@ function pass() {
 
 function verpass() {
     var cadena = document.getElementById('password1').value;
-    var expresionR = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$/;
+    var expresionR = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{8,16}$/;
     var resultado = expresionR.test(cadena);
     if (resultado !== true) {
         dhtmlx.alert({
@@ -70,5 +70,4 @@ function sleep(milliseconds) {
         }
     }
 }
-
 

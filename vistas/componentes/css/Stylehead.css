@@ -25,7 +25,7 @@ body{
     font-weight: bold;
     text-align:center;
     margin-left: 15px;
-   
+
 }
 
 .nav-bg ,a{
@@ -45,3 +45,13 @@ navbar-toggler{
     background: black;
 
 }
+
+nav{
+    height: 3.2em;
+}
+
+dropdown-item{
+    color: #009cc9 !important;
+    background-color: red !important;
+}
+

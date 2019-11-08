@@ -2,6 +2,7 @@
 
 <?php
 
+session_start();
 require_once '../conexion/Conexion.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -18,11 +19,12 @@ class ModeloLogin {
     public $password;
     public $mensaje;
     public $fecven;
-    
+    public $nombre;
+    public $apellido;
 
     public function checklogin($usuario, $password) {
         try {
-            session_start();
+            //se verifica que la direccion de correo este registrada
             $sql = "select * FROM usuario WHERE email_usuario = ?";
             $connect = Conexion::con();
             $query = $connect->prepare($sql);
@@ -30,25 +32,25 @@ class ModeloLogin {
             $query->execute();
             $row = $query->fetch(PDO::FETCH_ASSOC);
             if ($query->rowCount() < 1) {
-                $_SESSION['mensajeu'] = true;
+                $_SESSION['mensajeu'] = "Usuario o contraseña incorrecta intente nuevamente";
                 header('Location: ../vistas/Login.php');
             } else {
                 $hash = $row['password'];
                 if (password_verify($password, $hash)) {
-                    session_start();
-                    $_SESSION['usuario'] = $usuario;
+                    $nombre = $row['nombre_usuario'];
+                    $apellido = $row['apellido_usuario'];
+                    $_SESSION['usuario'] = $nombre . " " . $apellido;
                     $_SESSION['login'] = true;
                     header('Location: ../vistas/proyecto.php');
                 } else {
-                    $_SESSION['mensajeu'] = true;
+                    $_SESSION['mensajeu'] = "Usuario o contraseña incorrecta intente nuevamente";
                     header('Location: ../vistas/Login.php');
                 }
-              
             }
         } catch (Exception $e) {
             $_SESSION['mensajeu'] = $e->getMessage();
         }
-          $_SESSION['mensajeu'] = $e->getMessage();
+        $_SESSION['mensajeu'] = $e->getMessage();
     }
 
     public function recpass($usuario) {//Verifica que el usuario este registrado en la base de datos

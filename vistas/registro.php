@@ -132,10 +132,10 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label class="d-none d-md-block col-sm-3 col-form-label" for="contraseña">Contraseña:</label>
                     <div class="col-md-4">
-                        <input type="password" class="form-control" name="password1" id="password1" placeholder="Contraseña" value="Galileo1564">
+                        <input type="password" class="form-control" name="password1" id="password1" placeholder="Contraseña" value="Aaa111**">
                     </div>
                     <div class="col-md-4">
-                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirme su contraseña" value="Galileo1564">
+                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirme su contraseña" value="Aaa111**">
                     </div>
                 </div>
                

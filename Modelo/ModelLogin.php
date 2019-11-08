@@ -3,7 +3,7 @@
 <?php
 
 session_start();
-require_once '../conexion/Conexion.php';
+require_once '../conexion/conexion.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -48,16 +48,15 @@ class ModeloLogin {
                 }
             }
         } catch (Exception $e) {
-            $_SESSION['mensajeu'] = $e->getMessage();
+            $_SESSION['mensajeu'] = "El mensaje no puede ser enviado. Mailer Error: " . $e->getMessage();
         }
-        $_SESSION['mensajeu'] = $e->getMessage();
     }
 
     public function recpass($usuario) {//Verifica que el usuario este registrado en la base de datos
         try {
 
             $sql = "select * FROM usuario WHERE email_usuario = ?";
-            //$connect = conexion::con();
+            $connect = conexion::con();
             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $connect->prepare($sql);
             $query->bindParam(1, $usuario, PDO::PARAM_STR);
@@ -68,10 +67,11 @@ class ModeloLogin {
                 $_SESSION['mensajeu'] = "La direccion de correo no esta registrada en el sistema";
                 header('Location: ../vistas/Login.php');
             } else {
-                $rs = array("correo" => $row['Email'], "nombre" => $row['Nombre'], "apellido" => $row['Apellido']);
+                $rs = array("correo" => $row['email_usuario'], "nombre" => $row['nombre_usuario'], "apellido" => $row['apellido_usuario']);
             }
         } catch (Exception $e) {
             echo $e->getMessage();
+            header('Location: ../vistas/Login.php');
         }
 
         return $rs;
@@ -126,29 +126,31 @@ class ModeloLogin {
             $mail->AddAddress($address, $nombre); //Indica aquí la dirección que recibirá el correo que será enviado
             $mail->CharSet = 'UTF-8';
             $mail->send();
-
-            echo 'Mensaje enviado';
+            $_SESSION['mensajeu'] = "Mensaje enviado";
+            header('Location: ../vistas/Login.php');
         } catch (Exception $e) {
 
-            echo "El mensaje no puede ser enviado. Mailer Error: {$mail->ErrorInfo}";
+            $_SESSION['mensajeu'] = "El mensaje no puede ser enviado. Mailer Error: {$mail->ErrorInfo}";
+            header('Location: ../vistas/Login.php');
         }
     }
 
     public function newpas($usuario, $token, $fecven) {
         try {
-            $sql = "UPDATE usuario SET CodRec=?, codven=? WHERE email=?";
-            //$connect = conexion::con();
-            $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $sql = "UPDATE usuario SET codrec=?, codven=? WHERE email_usuario=?";
+            $connect = conexion::con();
+            //$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $query = $connect->prepare($sql);
             $query->bindParam(1, $token, PDO::PARAM_STR);
             $query->bindParam(2, $fecven, PDO::PARAM_STR);
             $query->bindParam(3, $usuario, PDO::PARAM_STR);
             $query->execute();
             if ($query->execute()) {
-                
+                return true;
             }
         } catch (Exception $exc) {
-            echo $exc->getTraceAsString();
+            $_SESSION['mensajeu'] = "El mensaje no puede ser enviado. Mailer Error: " . $e->getMessage();
+            header('Location: ../vistas/Login.php');
         }
     }
 

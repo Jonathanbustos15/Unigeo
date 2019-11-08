@@ -21,7 +21,6 @@
 
 <body>
     <?php include("header.php");
-    
     ?>
     <!-- formulario -->
 
@@ -74,23 +73,25 @@
                 </form>
             </div>
         </div>
-        <?php
-        if (!empty($_SESSION["mensajeu"])) {
-           echo "<span class=' m-3 px-5 alert-danger'>" . $_SESSION["mensajeu"] . "</span>";
-            session_destroy();
-        }
-         
-        ?>
-         
-        <script type="text/javascript">
-$(".alert-danger").delay(4000).slideUp(200, function() {
-    $(this).alert('close');
-});
-</script>
-        
-        
+
+
     </section>
 
+    <div class="container">
+        <?php
+        if (!empty($_SESSION["mensajeu"])) {
+            echo "<span class=' m-3 px-5 alert-danger'>" . $_SESSION["mensajeu"] . "</span>";
+            session_destroy();
+        }
+        ?>
+
+        <script type="text/javascript">
+            $(".alert-danger").delay(8000).slideUp(200, function () {
+                $(this).alert('close');
+            });
+        </script>
+
+    </div>
     <aside>
         <!-- The Modal -->
         <div class="modal fade" id="restablecer">
@@ -116,8 +117,8 @@ $(".alert-danger").delay(4000).slideUp(200, function() {
                                         <div class="panel">
                                             <fieldset>
                                                 <div class="form-group">
-                                                    <input class="form-control " placeholder="Dirección de correo"
-                                                           name="emailr" type="emailr">
+                                                    <input class="form-control " placeholder="Dirección de correo" name="emailr" type="emailr" required>
+
                                                 </div>
                                                 <input class="btn btn-lg btn-block btn-email"  value="Enviar" type="submit">
                                             </fieldset>

@@ -4,100 +4,107 @@ h1 {
 
 body {
     margin: 0 auto;
-    
+
 }
 
 
 .formulario {
-  position: relative;
-  width: 657px;
-  height: auto;
-  background: rgba(0, 0, 0, 0.6);
-  margin: 5rem auto;
-  padding: 20px;
+    position: relative;
+    width: 657px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    padding: 20px;
 }
 
 hr {
-  width: 5px;
-  border-top: 10px solid rgb(255, 255, 255);
+    width: 5px;
+    border-top: 10px solid rgb(255, 255, 255);
 }
 
 .bt-sub {
-  margin-bottom: 4%;
-  display: block;
+    margin-bottom: 4%;
+    height: 1.7em !important;
+    text-align: center;
+    margin:auto;
+    line-height:.8 !important;
 }
 
 input {
-  color: #6c757d;
-  height: 27px;
-  opacity: 1;
+    color: #6c757d;
+    height: 27px;
+    opacity: 1;
+}
+
+.custom-checkbox{
+    padding: 10px;  
 }
 
 .check {
-  color: #bbb;
+    color: #bbb;
 }
 
 .a-rest {
-  word-wrap: break-word;
-  color: rgb(228, 224, 224);
-  border-left: rgb(228, 224, 224);
-  background: none;
+    word-wrap: break-word;
+    color: rgb(228, 224, 224);
+    border-left: rgb(228, 224, 224);
+    background: none;
 }
 
 .a-rest:hover {
-  color: #17a2b8;
+    color: #17a2b8;
 }
 
 p {
-  width: 100%;
-  font-size: 16px;
-  color: #467EB7;
-  font-weight: 600;
-  line-height: 100%;
-  border-bottom: 1px solid #bbb;
-  margin: 0;
-  padding-bottom: 7px;
+    width: 100%;
+    font-size: 16px;
+    color: #467EB7;
+    font-weight: 600;
+    line-height: 100%;
+    border-bottom: 1px solid #bbb;
+    margin: 0;
+    padding-bottom: 7px;
 }
 
 img {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .modal-header {
-  text-align: left;
-  background-color: rgb(248, 248, 248);
-  color: #AD262A;
+    text-align: left;
+    background-color: rgb(248, 248, 248);
+    color: #AD262A;
 }
 
 /* .modal-body {} */
 
 .modal-footer {
-  background-color: rgb(248, 248, 248);
-  color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(248, 248, 248);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .btn-email {
-  background: #007DAB;
-  height: 40px !important;
-  color: #fff;
-  padding: 1%;
-  display: inline-block;
+    background: #007DAB;
+    height: 40px !important;
+    color: #fff;
+    padding: 1%;
+    display: inline-block;
 }
 
 .btn-close {
-  background: #007DAB;
-  width: auto;
-  height: 40px !important;
-  color: #fff;
-  padding-left: 1.5%;
+    background: #007DAB;
+    width: auto;
+    height: 40px !important;
+    color: #fff;
+    padding-left: 1.5%;
 }
 
 .modal-title {
-  margin-left: 20% !important;
+    margin-left: 20% !important;
 }
 
 .rest {
-  color: rgb(112, 111, 111);
+    color: rgb(112, 111, 111);
 }
 
 input {
@@ -109,25 +116,25 @@ input {
 .container {
     margin: 8% auto  !important;
     max-width: 600px !important;
-    
+
 }  
 
 /* reponsive */
 
 @media only screen and (max-width: 600px) {
-  .formulario {
-      margin: 0%;
-      background-image: none;
-      border: solid black;
-  }
-  body {
-      margin: 0 auto;
-  }
-  .formulario {
-      margin: 0%;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-  }
+    .formulario {
+        margin: 0%;
+        background-image: none;
+        border: solid black;
+    }
+    body {
+        margin: 0 auto;
+    }
+    .formulario {
+        margin: 0%;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+    }
 }
 
 

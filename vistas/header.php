@@ -85,7 +85,7 @@
                                     <?php echo $_SESSION['usuario']; ?>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="../controlador/controlReset.php">Restablecer contraseña</a>
+                                    <a class="dropdown-item" href="Reset.php">Restablecer contraseña</a>
                                     <a class="dropdown-item" href="cerrar_sesion.php">Cerrar sesión</a>
 
                                 </div>

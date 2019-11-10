@@ -20,7 +20,9 @@
 
 
 <body>
-    <?php include("header.php");
+    <?php
+    include("header.php");
+   
     ?>
     <!-- formulario -->
 
@@ -54,19 +56,19 @@
                         </div>
                     </div>
 
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label check" for="customCheck1">Recordarme en este equipo</label>
-                    </div>
-                    <br>
-                    <div class="row">
+                    <div class="">
                         <div class="bt-sub">
-                            <button type="submit" class="bt-sub btn btn-info">Ingresar</button>
+                            <button type="submit" class="bt-sub btn btn-info btn-block">Ingresar</button>
                         </div>
-                        <div class="px-1 sm-col-right border-top">
-                            <a class="px-3 a-rest" href="#restablecer" data-toggle="modal" data-target="#restablecer">¿Olvidó
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label check" for="customCheck1">Recordarme en este equipo</label>
+                        </div>
+                        
+                        <div class="">
+                            <a class="px-2 a-rest" href="#restablecer" data-toggle="modal" data-target="#restablecer">¿Olvidó
                                 sucontraseña?</a>
-                            <a class="px-3 a-rest" href="registro.php">Crear cuenta</a>
+                            <a class="px-1 a-rest" href="registro.php">Crear cuenta</a>
                         </div>
 
                     </div>

@@ -63,7 +63,7 @@
 
                     <div class="">
                         <div class="bt-sub">
-                            <button type="submit" class="bt-sub btn btn-info btn-block">Restablecer</button>
+                            <button type="submit" class="btn btn-info btn-block">Restablecer</button>
 
                         </div>
                 </form>

@@ -1,6 +1,6 @@
 
 .mg{
-    margin-top: 10%;   
+    margin-top: 6%;   
 }
 
 .mg1{
@@ -10,7 +10,13 @@
 
 }
 .container1{
-    margin: 5% 0 0 15%;
+    margin: 0 0 0 5%;
+   
+}
+
+.container2{
+     max-width: 50em !important;
+    
 }
 
 .input-group-text {

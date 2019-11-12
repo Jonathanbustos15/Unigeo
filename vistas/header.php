@@ -6,7 +6,7 @@
         <script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="componentes/js/popper.min.js" type="text/javascript"></script>
         <script src="componentes/js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>-->
+        <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="componentes/css/Stylehead.css" rel="stylesheet" type="text/css"/>
 
     </head>
@@ -20,20 +20,22 @@
                 </button>
                 <img src="componentes/images/UNIGEO1.png" width="180px" alt=""/>
                 <a href="Login.php" class="navbar-brand"></a>
-
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Inicio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="login.php">Iniciar sesión</a>
-                                <a class="dropdown-item" href="registro.php">Registrarse</a>
-                            </div>
-                        </li>
                         <?php
-                        if (!empty($_SESSION['usuario'])) {
+                        if (empty($_SESSION['usuario'])) {
+                            ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Inicio
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="login.php">Iniciar sesión</a>
+                                    <a class="dropdown-item" href="registro.php">Registrarse</a>
+                                </div>
+                            </li>
+                            <?php
+                        } else {
                             ?>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,6 +45,7 @@
                                     <a class="dropdown-item" href="crearuniversidad.php">Crear universidad</a>
                                     <a class="dropdown-item" href="detuniversidad.php">Detalle de universidad</a>
                                     <a class="dropdown-item" href="universidad.php">Editar universidad</a>
+                                    <a class="dropdown-item" href="ubicacion.php">ubicación</a>
                                 </div>
                             </li>
 
@@ -85,9 +88,8 @@
                                     <?php echo $_SESSION['usuario']; ?>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="Reset.php">Restablecer contraseña</a>
+                                    <a class="dropdown-item" href="#restablecer" data-toggle="modal" data-target="#restablecer">Restablecer contraseña</a>
                                     <a class="dropdown-item" href="cerrar_sesion.php">Cerrar sesión</a>
-
                                 </div>
                             </li>
                         </div>
@@ -100,5 +102,10 @@
                 </div>
             </nav>
         </div>
+        <?php
+        if (!empty($_SESSION['usuario'])) {
+            include 'resetmodal.php';
+        }
+        ?>
     </body>
 </html>                              

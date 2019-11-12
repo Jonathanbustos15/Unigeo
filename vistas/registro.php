@@ -27,8 +27,12 @@ require_once '../Conexion/Conexion.php';
         <?php
         session_start();
 
-        include 'Header.php';
+        if (!empty($_SESSION['usuario'])) {
+            session_destroy();
+        }
+        include("header.php");
         ?>
+        
         <h1>
             <?php
             if (!empty($_SESSION["gmensaje"])) {

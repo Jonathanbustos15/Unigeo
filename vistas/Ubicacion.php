@@ -11,7 +11,7 @@
 <body>
     <section class="mg">
         <div class="container1">
-            <div class="row">
+            <div class="container2 row">
                 <div class="col-4 mg1 p-4">
                     <div>
                         <form action="action">
@@ -101,9 +101,9 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-6 a2 ml-5">
+                <div class="col-6 ml-3">
                     <div class="map">
-                        <iframe src="https://qgiscloud.com/cristian_valencia/Unigeo/?bl=&st=&l=Google%20maps%2CUniversidades&t=Unigeo&e=-74.31279%2C4.53582%2C-73.84103%2C4.75167" width="800" height="450" frameborder="0"></iframe>
+                        <iframe src="https://qgiscloud.com/cristian_valencia/Unigeo/?bl=&st=&l=Google%20maps%2CUniversidades&t=Unigeo&e=-74.31279%2C4.53582%2C-73.84103%2C4.75167" width="1000" height="450" frameborder="0"></iframe>
 
                     </div>
                 </div>

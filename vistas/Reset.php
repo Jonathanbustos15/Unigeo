@@ -57,10 +57,7 @@
                             </small>
                         </div>
                     </div>
-
                     <br>
-
-
                     <div class="">
                         <div class="bt-sub">
                             <button type="submit" class="btn btn-info btn-block">Restablecer</button>

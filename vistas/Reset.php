@@ -3,11 +3,14 @@
 <meta charset="UTF-8">
 
 <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="componentes/css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
+  <link href="componentes/css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
 <link href="componentes/css/stylereset.css" rel="stylesheet" type="text/css"/>
 <script src="componentes/js/Unigeo.js" type="text/javascript"></script>
 <script src="componentes/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="componentes/js/message.js" type="text/javascript"></script>
 <script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
-
+<script src="componentes/js/dhtmlxcalendar.js" type="text/javascript"></script>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <script>
     $(window).scroll(function () {
@@ -20,7 +23,7 @@
 </script>
 
 
- <body  onload="doOnLoad();">
+<body  onload="doOnLoad();">
     <?php session_start(); ?>
 
     <?php include("header.php"); ?>
@@ -37,26 +40,26 @@
 
                 </div>
 
-                <form class="p-4" action="../Controlador/ControlReset.php" method="post">
+                <form class="p-4" action="../controlador/ControlRestablece.php" method="post" name="registro" id="registro" onSubmit="pass()">
                     <!-- titulo -->
 
                     <!-- codigo -->
                     <div class="form-group">
                         <div class="">
-                            <input type="text" class="form-control" id="codigo" name="codigo"  placeholder="Código de seguridad">
+                            <input type="text" class="form-control" id="codigo" name="codigo" autocomplete="off"  placeholder="Código de seguridad">
                         </div>
                     </div>
 
                     <!-- contraseña1 -->
                     <div class="form-group">
                         <div class="">
-                            <input type="password" class="form-control" id="usuario" name="password1"  placeholder="contraseña">
+                            <input type="password" class="form-control" id="password1" name="password1"  placeholder="contraseña">
                         </div>
                     </div>
                     <!-- contraseña2-->
                     <div class="form-group">
                         <div class="">
-                            <input type="password" class="form-control" id="password" name="password2" value="80161528" placeholder="Repita contraseña">
+                            <input type="password" class="form-control" id="password2" name="password2" value="80161528" placeholder="Repita contraseña">
                             <small id="passwordHelpBlock" class="form-text text-muted">
                                 la contraseña debe tener de 8-16 caracteres e incluir al menos una minúscula una mayúscula y un número
                             </small>
@@ -65,7 +68,7 @@
                     <br>
                     <div class="">
                         <div class="bt-sub">
-                            <!--                            <button type="submit" class="btn btn-info btn-block" >Restablecer</button>-->
+                            <!--<button type="submit" class="btn btn-info btn-block" >Restablecer</button>-->
                             <button type="button" id="enviar" name="enviar" class="btn btn-info btn-block" onclick="pass();" >Restablecer</button>
                         </div>
                 </form>
@@ -78,7 +81,6 @@
         }
         ?>
     </section>
-
 
     <?php
     include "footer.php";

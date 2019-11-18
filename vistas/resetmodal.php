@@ -20,7 +20,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <form class="p-5" action="../controlador/controlReset.php" name="registro" id="registro" method="post">
+                        <form class="p-5" action="../controlador/ControlMail.php" name="registro" id="registro" method="post">
 
                             <div class="col-md-12">
 

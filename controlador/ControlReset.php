@@ -23,7 +23,7 @@ try {
     if ($fun->newpas($usuario, $token, $fecven)) {
         $fun->sendmail($usuario, $nombre, $token);
         $_SESSION['mensajeu'] = "Mensaje enviado correctamente";
-        header('location: ../vistas/login.php');
+        header('location: ../vistas/reset.php');
     }
 } catch (Exception $exc) {
     $_SESSION['mensajeu'] = "El mensaje no puede ser enviado. Mailer Error: " . $exc->getTraceAsString();

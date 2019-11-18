@@ -20,7 +20,7 @@
 </script>
 
 
-<body>
+ <body  onload="doOnLoad();">
     <?php session_start(); ?>
 
     <?php include("header.php"); ?>
@@ -40,6 +40,12 @@
                 <form class="p-4" action="../Controlador/ControlReset.php" method="post">
                     <!-- titulo -->
 
+                    <!-- codigo -->
+                    <div class="form-group">
+                        <div class="">
+                            <input type="text" class="form-control" id="codigo" name="codigo"  placeholder="Código de seguridad">
+                        </div>
+                    </div>
 
                     <!-- contraseña1 -->
                     <div class="form-group">
@@ -47,7 +53,6 @@
                             <input type="password" class="form-control" id="usuario" name="password1"  placeholder="contraseña">
                         </div>
                     </div>
-
                     <!-- contraseña2-->
                     <div class="form-group">
                         <div class="">
@@ -60,8 +65,8 @@
                     <br>
                     <div class="">
                         <div class="bt-sub">
-                            <button type="submit" class="btn btn-info btn-block">Restablecer</button>
-
+                            <!--                            <button type="submit" class="btn btn-info btn-block" >Restablecer</button>-->
+                            <button type="button" id="enviar" name="enviar" class="btn btn-info btn-block" onclick="pass();" >Restablecer</button>
                         </div>
                 </form>
             </div>

@@ -78,12 +78,13 @@
             </div>
         </section>
         <div class="container">
-<?php
-if (!empty($_SESSION["mensajeu"])) {
-    echo "<span class=' m-3 px-5 alert-danger'>" . $_SESSION["mensajeu"] . "</span>";
-    session_destroy();
-}
-?>
+            <?php
+            include 'resetmodal.php';
+            if (!empty($_SESSION["mensajeu"])) {
+                echo "<span class=' m-3 px-5 alert-danger'>" . $_SESSION["mensajeu"] . "</span>";
+                session_destroy();
+            }
+            ?>
 
             <script type="text/javascript">
                 $(".alert-danger").delay(8000).slideUp(200, function () {
@@ -91,8 +92,8 @@ if (!empty($_SESSION["mensajeu"])) {
                 });
             </script>
         </div>
-<?php
-include "footer.php";
-?>
+        <?php
+        include "footer.php";
+        ?>
     </body>
 </html>

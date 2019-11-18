@@ -15,8 +15,8 @@ $fun = new ModeloLogin();
 $usuario = $_POST['emailr'];
 $dts = array();
 $dts = $fun->recpass($usuario);
-$token = 1;//$fun->token();
-$fecven = 1;// $fun->fechaven();
+$token = $fun->token();
+$fecven = $fun->fechaven();
 $nombre = $dts['nombre'];
 $apellido = $dts['apellido'];
 try {

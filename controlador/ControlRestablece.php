@@ -6,4 +6,4 @@ $codigo = htmlspecialchars(addslashes($_POST['codigo']));
 $password = htmlspecialchars(addslashes($_POST['password2']));
 $fechaact = $fun->fechact;
 
-echo $codigo . " " . $password . " " . $fechaact ;
+echo $codigo . " " . $password . " fecha: " . $fechaact ;

@@ -20,10 +20,10 @@
                                     <span class="input-group-text" id="">Valor</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Seleccione</option>
+                                    <option value="1">1,000,000 - 2,000,000</option>
+                                    <option value="2">2,000,000 - 3,000,000 </option>
+                                    <option value="3">3,000,000 - 4,000,000</option>
                                 </select>
                             </div>
 
@@ -32,34 +32,34 @@
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Universidad</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Fundacion universitaria San Jose</option>
+                                    <option value="2">Universidad Nacional</option>
+                                    <option value="3">Universidad Distrital</option>
                                 </select>
                             </div>
 
-                            <div class="input-group input-group-sm mb-3">
+<!--                            <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Sede</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>Choose...</option>
+                                    <option selected>Seleccione</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                            </div>
+                            </div>-->
 
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">carrera</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Ingenieria de sistemas</option>
+                                    <option value="2">Administraccion de empresas</option>
+                                    <option value="3">Contaduria publica</option>
                                 </select>
                             </div>
 
@@ -80,10 +80,10 @@
                                     <span class="input-group-text" id="inputGroup-sizing-sm">Modalidad</span>
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Presencial</option>
+                                    <option value="2">Semipresencial</option>
+                                    <option value="3">Virtual</option>
                                 </select>
                             </div>
 
@@ -93,9 +93,9 @@
                                 </div>
                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                     <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="1">Fontibon</option>
+                                    <option value="2">Kennedy</option>
+                                    <option value="3">Chapinero</option>
                                 </select>
                             </div>
                         </form>

@@ -28,7 +28,6 @@ Class ModelReset {
         }
     }
 
-//$fecven = $row['fecven'];if ($fechaact > $fecven)
 
     public function restablece_pass($codigo, $fechaact, $password) {
         $sql = "UPDATE usuario SET codven = ?, password = ? WHERE codrec = ?";

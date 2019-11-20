@@ -17,20 +17,12 @@
                     <img src="componentes/images/mapa2.PNG" alt=""/>
                 </div>
                 <section>
-                    <div class="panel">
+                    <div class="panelu">
                         <h1>UNIGEO</h1>
-                        <div>
+                        <div class="parrafo p5">
                             <p>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eligendi, unde obcaecati facere necessitatibus sunt dolore beatae totam eveniet optio velit dignissimos voluptate quis. Dolorem, quisquam ipsam dicta ullam asperiores!</span>
-                                <span>Nostrum, assumenda id a aspernatur vitae officiis labore! Magni, tempore, natus, in incidunt corrupti enim ducimus quaerat deserunt rem corporis adipisci quo fuga error. Asperiores, expedita pariatur eos perspiciatis fuga!</span>
-                                <span>Accusamus, corporis, quisquam, veniam cupiditate nesciunt similique minima sequi rerum pariatur magni fugit omnis tempore dolore hic officiis ipsam dolores amet soluta temporibus quam fuga voluptatum eum eaque eos aliquam.</span>
-                                <span>Temporibus, ratione assumenda eligendi reprehenderit consectetur odio nemo! Ipsa, ut maiores temporibus fuga illum est laboriosam! Repudiandae, et nam ipsa inventore distinctio maiores vero quasi aperiam maxime similique voluptas impedit?</span>
-                                <span>Quo, mollitia aspernatur pariatur asperiores officiis enim voluptatem cupiditate laudantium dolorem veniam! Pariatur, dolores hic deleniti at accusantium fugiat iure distinctio nisi dolorum amet impedit recusandae facere iusto nemo ab!</span>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eligendi, unde obcaecati facere necessitatibus sunt dolore beatae totam eveniet optio velit dignissimos voluptate quis. Dolorem, quisquam ipsam dicta ullam asperiores!</span>
-                                <span>Nostrum, assumenda id a aspernatur vitae officiis labore! Magni, tempore, natus, in incidunt corrupti enim ducimus quaerat deserunt rem corporis adipisci quo fuga error. Asperiores, expedita pariatur eos perspiciatis fuga!</span>
-                                <span>Accusamus, corporis, quisquam, veniam cupiditate nesciunt similique minima sequi rerum pariatur magni fugit omnis tempore dolore hic officiis ipsam dolores amet soluta temporibus quam fuga voluptatum eum eaque eos aliquam.</span>
-                                <span>Temporibus, ratione assumenda eligendi reprehenderit consectetur odio nemo! Ipsa, ut maiores temporibus fuga illum est laboriosam! Repudiandae, et nam ipsa inventore distinctio maiores vero quasi aperiam maxime similique voluptas impedit?</span>
-                                <span>Quo, mollitia aspernatur pariatur asperiores officiis enim voluptatem cupiditate laudantium dolorem veniam! Pariatur, dolores hic deleniti at accusantium fugiat iure distinctio nisi dolorum amet impedit recusandae facere iusto nemo ab!</span>
+                                <span>El presente trabajo de investigación busca ayudar a las personas que están interesadas en la búsqueda de una universidad o centro de educación superior por medio de una herramienta tecnológica en la ciudad de Bogotá. Se generó una investigación de tipo tecnológico,
+                                    que se caracteriza por ser aplicado en particular a innovar para cumplir un fin valioso en la sociedad. Basados en este tipo de investigación se realizó una encuesta para la recolección de información donde se evidenció que existen diferentes tipos de población que desean acceder a la educación superior, esta segmentación de la población se realizó según su adquisición económica, su conocimiento intelectual y su ubicación territorial. La solución que se plantea a través del proyecto UniGeo es generar un aplicativo web donde el usuario pueda visualizar la información de los diferentes centros de educación superior donde pueda elegir por medio de consultas su carrera de pregrado. Dicha aplicación se trabajó por medio de un software libre llamado QGIS para la parte gráfica del mapa con la ubicación exacta de las universidades; por otra parte, esta aplicación permite la conexión con sistemas gestores de bases de datos como Postgres o MySQL donde se almacena la información.
 
                             </p> 
                         </div>

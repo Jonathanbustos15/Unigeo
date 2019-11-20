@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="componentes/css/StyleModal.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
@@ -34,7 +35,7 @@
                                                     <input class="form-control " placeholder="Dirección de correo" name="emailr" type="emailr" required>
 
                                                 </div>
-                                                <input class="btn btn-lg btn-block btn-email" id="registro" value="Enviar" type="submit">
+                                                <input class="btn1 btn-lg btn-block btn-email" id="registro" value="Enviar" type="submit">
                                             </fieldset>
                                         </div>
                                     </div>

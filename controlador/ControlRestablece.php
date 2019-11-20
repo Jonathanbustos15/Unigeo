@@ -9,9 +9,10 @@ $password = password_hash($pass, PASSWORD_DEFAULT);
 
 if ($fun->consulta_codigo($codigo, $fechaact)) {
     $fun->restablece_pass($codigo, $fechaact, $password);
+    header('Location: ../vistas/Login.php');
 } else {
-    echo 'Codigo errado, vencido o ya usado'
-    ;
+    $_SESSION["mensajeu"] = 'Codigo errado, vencido o ya usado';
+    header('Location: ../vistas/Reset.php');
 }
 
 

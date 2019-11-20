@@ -99,8 +99,8 @@ class ModeloLogin {
     public function sendmail($address, $nombre, $token) {
         $template = file_get_contents('../vistas/template.php');
         $template = str_replace("{{name}}", $nombre, $template);
-        $template = str_replace("{{action_url_2}}", 'https://URL/' . $token, $template);
-        $template = str_replace("{{action_url_1}}", 'https://URL/' . $token, $template);
+        $template = str_replace("{{action_url_2}}",  $token, $template);
+        $template = str_replace("{{action_url_1}}", 'http://localhost:8850/Unigeo/vistas/reset.php', $template);
         $template = str_replace("{{year}}", date('Y'), $template);
         $template = str_replace("{{operating_system}}", funhelp::getOS(), $template);
         $template = str_replace("{{browser_name}}", funhelp::getBrowser(), $template);
@@ -126,7 +126,7 @@ class ModeloLogin {
             $mail->AddAddress($address, $nombre); //Indica aquí la dirección que recibirá el correo que será enviado
             $mail->CharSet = 'UTF-8';
             $mail->send();
-            $_SESSION['mensajeu'] = "Mensaje enviado";
+            $_SESSION['mensajer'] = "Mensaje enviado correctamente";
             header('Location: ../vistas/Login.php');
         } catch (Exception $e) {
 

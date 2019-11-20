@@ -42,6 +42,7 @@
                                     Universidad
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="proyecto.php">Inicio</a>
                                     <a class="dropdown-item" href="crearuniversidad.php">Crear universidad</a>
                                     <a class="dropdown-item" href="detuniversidad.php">Detalle de universidad</a>
                                     <a class="dropdown-item" href="edituniversidad.php">Editar universidad</a>

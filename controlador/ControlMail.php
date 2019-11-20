@@ -22,7 +22,7 @@ $apellido = $dts['apellido'];
 try {
     if ($fun->newpas($usuario, $token, $fecven)) {
         $fun->sendmail($usuario, $nombre, $token);
-        $_SESSION['mensajeu'] = "Mensaje enviado correctamente";
+        $_SESSION['mensajer'] = "Mensaje enviado correctamente";
         header('location: ../vistas/reset.php');
     }
 } catch (Exception $exc) {

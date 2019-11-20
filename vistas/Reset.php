@@ -4,7 +4,7 @@
 
 <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="componentes/css/message_growl_dark.css" rel="stylesheet" type="text/css"/>
-  <link href="componentes/css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
+<link href="componentes/css/dhtmlxcalendar.css" rel="stylesheet" type="text/css"/>
 <link href="componentes/css/stylereset.css" rel="stylesheet" type="text/css"/>
 <script src="componentes/js/Unigeo.js" type="text/javascript"></script>
 <script src="componentes/js/bootstrap.min.js" type="text/javascript"></script>
@@ -76,7 +76,12 @@
         </div>
         <?php
         if (!empty($_SESSION["mensajeu"])) {
-            echo "<span class='m-5 px-5 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
+            echo "<span class='m-5 py-2 text-danger'>" . $_SESSION["mensajeu"] . "</span>";
+            session_destroy();
+        }
+
+        if (!empty($_SESSION["mensajer"])) {
+            echo "<span class='m-5 py-2 text-success'>" . $_SESSION["mensajer"] . "</span>";
             session_destroy();
         }
         ?>

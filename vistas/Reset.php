@@ -46,20 +46,20 @@
                     <!-- codigo -->
                     <div class="form-group">
                         <div class="">
-                            <input type="text" class="form-control" id="codigo" name="codigo" autocomplete="off"  placeholder="Código de seguridad">
+                            <input type="text" class="form-control" id="codigo" name="codigo" autocomplete="off" value="33c7a2daee" placeholder="Código de seguridad">
                         </div>
                     </div>
 
                     <!-- contraseña1 -->
                     <div class="form-group">
                         <div class="">
-                            <input type="password" class="form-control" id="password1" name="password1"  placeholder="contraseña">
+                            <input type="password" class="form-control" id="password1" name="password1"  placeholder="contraseña" value="Aaa111**">
                         </div>
                     </div>
                     <!-- contraseña2-->
                     <div class="form-group">
                         <div class="">
-                            <input type="password" class="form-control" id="password2" name="password2" value="80161528" placeholder="Repita contraseña">
+                            <input type="password" class="form-control" id="password2" name="password2" placeholder="Repita contraseña" value="Aaa111**">
                             <small id="passwordHelpBlock" class="form-text text-muted">
                                 la contraseña debe tener de 8-16 caracteres e incluir al menos una minúscula una mayúscula y un número
                             </small>

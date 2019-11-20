@@ -8,38 +8,40 @@ Class ModelReset {
     public $usuario;
     public $password;
     public $codigo;
-    public $fechact;
+    public $fechaact;
+    public $fecven;
 
-    public function consulta_codigo($codigo, $fechact) {
-        $sql = "SELECT * FROM codrec = ?";
+    public function consulta_codigo($codigo, $fechaact) {
+        $sql = "SELECT * FROM usuario WHERE codrec = ?";
         $connect = Conexion::con();
         $query = $connect->prepare($sql);
         $query->bindParam(1, $codigo);
         $query->execute();
         $row = $query->fetch(PDO::FETCH_ASSOC);
         if ($query->rowCount() < 1) {
-            $fecven = $row['fecven'];
-            if ($fechact > $fecven) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
             return false;
+        } else {
+            $fecven = $row['codven'];
+            if ($fechaact < $fecven) {
+                return true;
+            }
         }
     }
 
-    public function restablece_pass($codigo, $fechact) {
+//$fecven = $row['fecven'];if ($fechaact > $fecven)
+
+    public function restablece_pass($codigo, $fechaact, $password) {
         $sql = "UPDATE usuario SET codven = ?, password = ? WHERE codrec = ?";
         $connect = Conexion::con();
         $query = $connect->prepare($sql);
-        $query->execute();
-        $query->bindValue(1, $fechact);
+        $query->bindValue(1, $fechaact);
         $query->bindValue(2, $password);
         $query->bindValue(3, $codigo);
+        $query->execute();
     }
 
-    public function fechact() {//establece la hora y fecha actual
+    public
+            function fechact() {//establece la hora y fecha actual
         date_default_timezone_set('America/Bogota');
         $this->fechact = date('Y-m-d H:i');
         return $this->fechact;

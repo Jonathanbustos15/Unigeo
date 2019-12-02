@@ -13,8 +13,7 @@ Class ModelReset {
 
     public function consulta_codigo($codigo, $fechaact) {
         $sql = "SELECT * FROM usuario WHERE codrec = ?";
-        $connect = Conexion::con();
-        $query = $connect->prepare($sql);
+        $connect = Conexion::con();        $query = $connect->prepare($sql);
         $query->bindParam(1, $codigo);
         $query->execute();
         $row = $query->fetch(PDO::FETCH_ASSOC);

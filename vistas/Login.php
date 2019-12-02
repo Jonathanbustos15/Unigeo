@@ -49,14 +49,14 @@
                         <!-- nombre -->
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input type="text" class="form-control" id="usuario" name="usuario" value="jeisonmzapata@outlook.com" placeholder="Usuario">
+                                <input type="text" class="form-control" id="usuario" name="usuario"  placeholder="Usuario">
                             </div>
                         </div>
 
                         <!-- apellido-->
                         <div class="form-group row ">
                             <div class="col-md-12">
-                                <input type="text" class="form-control" id="password" name="password" value="Aaa111**" placeholder="Contraseña">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
                             </div>
                         </div>
 

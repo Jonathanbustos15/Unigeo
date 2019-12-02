@@ -59,7 +59,7 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label for="nombre" class="d-none d-md-block col-sm-3 col-form-label">Nombre:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control imput" name="nombre" id="nombre" placeholder="Ingrese su nombre" value="Juan">
+                        <input type="text" class="form-control imput" name="nombre" id="nombre" placeholder="Ingrese su nombre" >
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label class="d-none d-md-block col-sm-3 col-form-label" for="apellido">Apellidos:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese su apellido" value="Perez">
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese su apellido" >
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label class="d-none d-md-block col-sm-3 col-form-label" for="mail">Email:</label>
                     <div class="col-md-8">
-                        <input type="email" class="form-control" name="mail" id="mail" aria-describedby="emailHelp" placeholder="Ingrese su email" value="jeisonmzapata@outlook.com">
+                        <input type="email" class="form-control" name="mail" id="mail" aria-describedby="emailHelp" placeholder="Ingrese su email" >
                         <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small> -->
                     </div>
@@ -85,7 +85,7 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label class="d-none d-md-block col-sm-3 col-form-label" for="fecha">Fecha de nacimiento:</label>
                     <div class="col-md-8">
-                        <input type="tex" class="form-control" name="fecha" id="fecha" pattern="[0-9_-]{1,15}" required placeholder="fecha de nacimiento" value="1992-05-27">
+                        <input type="tex" class="form-control" name="fecha" id="fecha" pattern="[0-9_-]{1,15}" required placeholder="fecha de nacimiento" >
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label for="direccion" class="d-none d-md-block col-sm-3 col-form-label">Dirección:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" name="direccion" id="nombre" placeholder="Ingrese su dirección" value="calle 34 # 24 - 32">
+                        <input type="text" class="form-control" name="direccion" id="nombre" placeholder="Ingrese su dirección" >
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label for="telefono" class="d-none d-md-block col-sm-3 col-form-label">Telefono:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" name="telefono" id="nombre" placeholder="Ingrese su telefono" value="4531178">
+                        <input type="text" class="form-control" name="telefono" id="nombre" placeholder="Ingrese su telefono" >
                     </div>
                 </div>
 
@@ -136,10 +136,10 @@ require_once '../Conexion/Conexion.php';
                 <div class="form-group row">
                     <label class="d-none d-md-block col-sm-3 col-form-label" for="contraseña">Contraseña:</label>
                     <div class="col-md-4">
-                        <input type="password" class="form-control" name="password1" id="password1" placeholder="Contraseña" value="Aaa111**">
+                        <input type="password" class="form-control" name="password1" id="password1" placeholder="Contraseña" >
                     </div>
                     <div class="col-md-4">
-                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirme su contraseña" value="Aaa111**">
+                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirme su contraseña" >
                     </div>
                 </div>
 

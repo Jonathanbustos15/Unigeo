@@ -7,6 +7,7 @@
     <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
     <script src="componentes/js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="componentes/js/popper.min.js" type="text/javascript"></script>
+    <link href="componentes/css/Stylehead.css" rel="stylesheet" type="text/css"/>
     <link href="componentes/css/Stylelog.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script>
@@ -27,7 +28,7 @@
         if (!empty($_SESSION['usuario'])) {
             session_destroy();
         }
-        include("header.php");
+        
         ?>
         <!-- formulario -->
         <section class="formulario container">

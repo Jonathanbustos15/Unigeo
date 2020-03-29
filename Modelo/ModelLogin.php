@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 <?php
 
 session_start();
@@ -21,6 +26,7 @@ class ModeloLogin {
     public $fecven;
     public $nombre;
     public $apellido;
+    public $tip_usuario;
 
     public function checklogin($usuario, $password) {
         try {
@@ -39,7 +45,9 @@ class ModeloLogin {
                 if (password_verify($password, $hash)) {
                     $nombre = $row['nombre_usuario'];
                     $apellido = $row['apellido_usuario'];
+                    $tip_usuario = $row['id_tipo_usuario'];
                     $_SESSION['usuario'] = $nombre . " " . $apellido;
+                    $_SESSION['tipousuario'] = $tip_usuario;
                     $_SESSION['login'] = true;
                     header('Location: ../vistas/proyecto.php');
                 } else {

@@ -1,0 +1,13 @@
+Univerdades
+	crear universidad
+		crear Sedes
+		crear Carrera
+	Consultar Carrera
+	
+Ruta
+Noticias
+	crear noticias
+	consultar noticias 
+
+
+

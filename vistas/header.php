@@ -24,7 +24,7 @@
                     <div class="navbar-nav">
                         <?php
                         if (empty($_SESSION['usuario'])) {
-                            header("Location: Login.php");
+                           // header("Location: Login.php");
                             ?>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,17 +56,17 @@
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Sede
+                                       Universidades
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="crearsede.php">Crear sede</a>
+                                        <a class="dropdown-item" href="crearsede.phpCrear</a>
                                         <a class="dropdown-item" href="detuniversidad.php">Detalle de sede</a>
                                     </div>
                                 </li>
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Carrera
+                                        Ruta
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="crearcarrera.php">Crear carrera</a>

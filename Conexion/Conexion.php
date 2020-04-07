@@ -11,7 +11,7 @@ class Conexion {
             try {
                 include_once 'config.php';
 
-                $conexion = new PDO('pgsql:host=' . DBHOST . '; dbname=' . DBNAME . '; port=' . DBPORT, DBUSER, DBPASS);
+                $conexion = new PDO('mysql:host=' . DBHOST . '; dbname=' . DBNAME . '; port=' . DBPORT, DBUSER, DBPASS);
                 $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $conexion->exec("SET NAMES 'UTF8'");
                 return $conexion;

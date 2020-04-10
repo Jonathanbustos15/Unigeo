@@ -41,9 +41,9 @@ class ModeloLogin {
                     $apellido = $row['apellido_usuario'];
                     $tip_usuario = $row['id_tipo_usuario'];
                     $_SESSION['usuario'] = $nombre . " " . $apellido;
-                    $_SESSION['tipousuario'] = $tip_usuario;
+                    $_SESSION['tipousuario'] = $tip_usuario; //capturamos el tipo de usuario
                     $_SESSION['login'] = true;
-                    header('Location: ../vistas/proyecto.php');
+                    return true;
                 } else {
                     $_SESSION['mensajeu'] = "Usuario o contraseña incorrecta intente nuevamente";
                     header('Location: ../vistas/Login.php');
@@ -79,6 +79,24 @@ class ModeloLogin {
         return $rs;
     }
 
+    public function getpermiso($tip_usuario) {
+        try {
+            $sql = "SELECT * FROM permisos Where fkid_tipo_usuario=?";
+            $connect = conexion::con();
+            $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $query = $connect->prepare($sql);
+            $query->bindParam(1, $tip_usuario);
+            $query->execute();
+            $permisos = $query->fetchAll();
+            if ($query->execute()) {
+                $_SESSION['permisos'] = $permisos;
+                return $permisos;
+            }
+        } catch (Exception $exc) {
+            echo $exc->getTraceAsString();
+        }
+    }
+
     public function fechact() {//establece la hora y fecha actual
         date_default_timezone_set('America/Bogota');
         $this->fechact = date('Y-m-d H:i');
@@ -101,7 +119,7 @@ class ModeloLogin {
     public function sendmail($address, $nombre, $token) {
         $template = file_get_contents('../vistas/template.php');
         $template = str_replace("{{name}}", $nombre, $template);
-        $template = str_replace("{{action_url_2}}",  $token, $template);
+        $template = str_replace("{{action_url_2}}", $token, $template);
         $template = str_replace("{{action_url_1}}", 'http://localhost:8850/Unigeo/vistas/reset.php', $template);
         $template = str_replace("{{year}}", date('Y'), $template);
         $template = str_replace("{{operating_system}}", funhelp::getOS(), $template);

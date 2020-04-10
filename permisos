@@ -1,0 +1,22 @@
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,1,1,1,1,1,1,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,2,1,1,1,1,1,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,3,1,1,1,1,1,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,4,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,5,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,6,1,1,1,1,1,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (1,7,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,1,1,0,1,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,2,1,1,1,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,3,1,1,1,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,4,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,5,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,6,1,0,1,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (2,7,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,1,0,0,0,0,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,2,0,0,0,0,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,3,0,0,0,0,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,4,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,5,1,0,0,1,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,6,0,0,0,0,0,1);
+insert INTO permisos (`fkid_tipo_usuario`,`fkid_modulo`,`ver`,`crear`,`consultar`,`editar`,`eliminar`,`estadov`) VALUES (3,7,1,0,0,1,0,1);
+

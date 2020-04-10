@@ -20,7 +20,6 @@
         });
     </script>
 
-
     <body>
         <?php
         session_start();

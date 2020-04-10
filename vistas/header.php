@@ -18,13 +18,14 @@
                 <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <img src="componentes/images/UNIGEO1.png" width="180px" alt=""/>
-                <a href="Login.php" class="navbar-brand"></a>
+                <a href="proyecto.php" class="navbar-brand">
+                    <img src="componentes/images/UNIGEO1.png" width="180px" alt=""/></a>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <?php
                         if (empty($_SESSION['usuario'])) {
-                           // header("Location: Login.php");
+                            //header("Location: Login.php");
                             ?>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,82 +39,68 @@
 
                             <?php
                         } else {
-                            if ($_SESSION['tipousuario'] == 2) {
-                                ?>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Universidad
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="proyecto.php">Inicio</a>
-                                        <a class="dropdown-item" href="crearuniversidad.php">Crear universidad</a>
-                                        <a class="dropdown-item" href="detuniversidad.php">Detalle de universidad</a>
-                                        <a class="dropdown-item" href="edituniversidad.php">Editar universidad</a>
-                                        <a class="dropdown-item" href="ubicacion.php">ubicación</a>
-                                    </div>
-                                </li>
-                                <?php } ?>
+                            ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Universidad
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       Universidades
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="crearsede.phpCrear</a>
-                                        <a class="dropdown-item" href="detuniversidad.php">Detalle de sede</a>
-                                    </div>
-                                </li>
+                                    <a class="dropdown-item" href="crearuniversidad.php">Crear universidad</a>
+                                    <a class="dropdown-item" href="detuniversidad.php">Detalle de universidad</a>
+                                    <a class="dropdown-item" href="edituniversidad.php">Editar universidad</a>
+                                    <a class="dropdown-item" href="ubicacion.php">ubicación</a>
+                                </div>
+                            </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Ruta
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="crearcarrera.php">Crear carrera</a>
-                                    </div>
-                                </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ruta
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="crearcarrera.php">Crear carrera</a>
+                                </div>
+                            </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Noticias
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="noticias.php">Noticias</a>
-                                        <a class="dropdown-item" href="noticias2.php">Noticias 2</a>
-                                        <a class="dropdown-item" href="crearnoticia.php">Crear noticias</a>
-                                    </div>
-                                </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Noticias
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="noticias.php">Noticias</a>
+                                    <a class="dropdown-item" href="noticias2.php">Noticias 2</a>
+                                    <a class="dropdown-item" href="crearnoticia.php">Crear noticias</a>
+                                </div>
+                            </li>
 
-                            </div>
+                        </div>
 
-
-                            <div class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <?php
-                                        echo $_SESSION['usuario'];
-                                        echo $_SESSION['tipousuario']
-                                        ?>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#restablecer" data-toggle="modal" data-target="#restablecer">Restablecer contraseña</a>
-                                        <a class="dropdown-item" href="cerrar_sesion.php">Cerrar sesión</a>
-                                    </div>
-                                </li>
-                            </div>
-                            <?php
-                        }
-                        ?>
-                    </div>
-                    <div class="imgjose ml-auto d-none d-md-block">
-                        <img src="componentes/images/SanjoseLog2_1.png"  width="180px" alt=""/>
-                    </div>
-                </nav>
-            </div>
-            <?php
-            if (!empty($_SESSION['usuario'])) {
-                include 'resetmodal.php';
-            }
-            ?>
+                        <div class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <?php
+                                    echo $_SESSION['usuario'];
+                                    ?>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#restablecer" data-toggle="modal" data-target="#restablecer">Restablecer contraseña</a>
+                                    <a class="dropdown-item" href="cerrar_sesion.php">Cerrar sesión</a>
+                                </div>
+                            </li>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
+                <div class="imgjose ml-auto d-none d-md-block">
+                    <img src="componentes/images/SanjoseLog2_1.png"  width="180px" alt=""/>
+                </div>
+            </nav>
+        </div>
+        <?php
+        if (!empty($_SESSION['usuario'])) {
+            include 'resetmodal.php';
+        }
+        ?>
     </body>
 </html>                              

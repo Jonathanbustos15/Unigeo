@@ -57,11 +57,11 @@
                             <div class="form-row">
                                 <div class="form-group col-6">
                                     <label for="direccion">Coordenada X</label>
-                                    <input type="text" class="form-control" id="inputUser" placeholder="Cordenada X">
+                                    <input type="text" class="form-control" id="inputUser" placeholder="Cordenada X" utocomplete="off">
                                 </div>
                                 <div class="form-group col-6">
                                     <label for="direccion">Coordenada Y</label>
-                                    <input type="password" class="form-control" id="inputPass" placeholder="Cordenada Y">
+                                    <input type="text" class="form-control" id="inputPass" placeholder="Cordenada Y" utocomplete="off">
                                 </div>
                             </div>
                             <!--Email-->

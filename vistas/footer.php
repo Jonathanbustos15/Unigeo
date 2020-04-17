@@ -12,7 +12,7 @@
     <body>
         <!-- Footer -->
         <footer class="font-small text-center footer-style footer-copyright py-2">
-            © 2019 Copyright: UNIGEO
+            © 2020 Copyright: UNIGEO
         </footer>
         <!-- Footer -->
     </body>

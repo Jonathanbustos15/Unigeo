@@ -24,6 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <?php
+                        $permisos = ($_SESSION['permisos']);
                         if (empty($_SESSION['usuario'])) {
                             //header("Location: Login.php");
                             ?>
@@ -36,7 +37,6 @@
                                     <a class="dropdown-item" href="registro.php">Registrarse</a>
                                 </div>
                             </li>
-
                             <?php
                         } else {
                             ?>
@@ -45,31 +45,55 @@
                                     Universidad
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <?php if ($permisos[0]["crear"] == 1) { ?>
+                                        <a class="dropdown-item" href="crearuniversidad.php">Crear universidad</a>
+                                    <?php }if ($permisos[1]["crear"] == 1) { ?>
+                                        <a class="dropdown-item" href="crearsede.php">Crear Sede</a>
+                                    <?php } 
+                                      if ($permisos[0]["editar"] == 1) { ?>
+                                        <a class="dropdown-item" href="edituniversidad.php">Editar universidad</a>
+                                    <?php } ?>
 
-                                    <a class="dropdown-item" href="crearuniversidad.php">Crear universidad</a>
-                                    <a class="dropdown-item" href="detuniversidad.php">Detalle de universidad</a>
-                                    <a class="dropdown-item" href="edituniversidad.php">Editar universidad</a>
-                                    <a class="dropdown-item" href="ubicacion.php">ubicación</a>
                                 </div>
                             </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Ruta
+                                    Carrera
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="crearcarrera.php">Crear carrera</a>
+                                    <?php if ($permisos[2]["crear"] == 1) { ?>
+                                        <a class="dropdown-item" href="crearcarrera.php">Crear carrera</a>
+                                    <?php } 
+                                        if ($permisos[2]["consultar"] == 1) { ?>
+                                        <a class="dropdown-item" href="#">Consultar carrera</a>
+                                    <?php } ?>
                                 </div>
                             </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ruta
+                                </a>
+                                <?php if ($permisos[4]["ver"] == 1) { ?>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="ubicacion.php">ubicación</a>
+                                    </div>
+                                <?php } ?>
+                            </li>
+
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Noticias
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="noticias.php">Noticias</a>
-                                    <a class="dropdown-item" href="noticias2.php">Noticias 2</a>
-                                    <a class="dropdown-item" href="crearnoticia.php">Crear noticias</a>
+                                    <?php if ($permisos[5]["crear"] == 1) { ?>
+                                        <a class="dropdown-item" href="crearnoticia.php">Crear noticias</a>
+                                    <?php } if ($permisos[6]["ver"] == 1) { ?>
+                                        <a class="dropdown-item" href="noticias2.php">Noticias</a>
+                                    <?php } ?>    
                                 </div>
                             </li>
 

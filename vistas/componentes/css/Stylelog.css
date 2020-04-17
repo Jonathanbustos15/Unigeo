@@ -12,10 +12,20 @@ body {
     position: relative;
     width: 657px;
     height: auto;
-    background: rgba(0, 0, 0, 0.6);
+    background:rgba(255, 255, 255 ,.7);
     margin: 5rem auto;
     padding: 20px;
+    border: 1.5px solid rgba(0, 0, 0,.3);
+    border-radius: 5px;
+
 }
+
+.panel_left{
+    
+    margin-top: 5%;
+    
+}
+
 
 hr {
     width: 5px;
@@ -41,12 +51,12 @@ input {
 }
 
 .check {
-    color: #bbb;
+    color: #000;
 }
 
 .a-rest {
     word-wrap: break-word;
-    color: rgb(228, 224, 224);
+    color: rgba(0, 0, 0, .8);
     border-left: rgb(228, 224, 224);
     background: none;
 }
@@ -56,14 +66,14 @@ input {
 }
 
 p {
-    width: 100%;
-    font-size: 16px;
-    color: #45B6F2 !important;
+    width: 10%;
+    font-size: 25px;
+    color: rgb(152, 211, 83) !important;
     font-weight: 600;
     line-height: 100%;
     border-bottom: 1px solid #bbb;
     margin: 0;
-    padding-bottom: 7px;
+    padding-bottom: 3%;
 }
 
 img {
@@ -111,9 +121,9 @@ img {
 }
 
 .btn{
-    background-color:#17a2b8 !important;
+    background-color:rgb(72, 91, 164) !important;
     color: #fff !important;
-    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    box-shadow: 0 3px 9px black, inset 0 0 0px white;
     height: 1.7em !important;
     padding: 0.5em !important;
     line-height: 0px !important;
@@ -145,8 +155,7 @@ input {
     }
     .formulario {
         margin: 0%;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
+       
     }
 }
 

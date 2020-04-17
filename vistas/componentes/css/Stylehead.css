@@ -6,7 +6,7 @@
 
 body{
     margin:0 auto;   
-    background-image: url("../../componentes/images/bogota.png");
+    background-image: url("../../componentes/images/fondo.jpg");
     background-repeat:no-repeat;
     background-size:100% 100%;
     background-attachment: fixed;    
@@ -21,7 +21,7 @@ body{
     border: solid 5px black;
     border-radius: 12px;
     background: #45B6F2;
-    color: white;
+    color: #000;
     font-weight: bold;
     text-align:center;
     margin-left: 15px;
@@ -30,9 +30,9 @@ body{
 
 .nav-bg ,a{
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color:#45B6F2 ;
+    background-color:rgba(255,255,255,1);
     box-sizing: border-box;
-    color: #fff;
+    color: #000;
 }
 
 

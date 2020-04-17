@@ -34,12 +34,12 @@
 
             <div class="row">
                 <div class="panel_left col-4 d-xm-none">
-                    <img src="componentes/images/unigeo.png" height="280px" alt="Logo"/>
+                    <img src="componentes/images/unigeo.png" height="200px" alt="Logo"/>
                 </div>
 
                 <div class="panel_right col-8">
                     <div>
-                        <p class="col-md-12 ">Inicio de sesion</p>
+                        <p class="col-md-12 ">Inicio de sesión</p>
 
                     </div>
 
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="bt-sub">
-                            <button type="submit"  id="login" class="bt-sub btn btn-info btn-block">Ingresar</button>
+                            <button type="submit"  id="login" class="bt-sub btn btn-block">Ingresar</button>
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">

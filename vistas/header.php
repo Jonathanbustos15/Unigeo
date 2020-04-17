@@ -19,14 +19,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="proyecto.php" class="navbar-brand">
-                    <img src="componentes/images/UNIGEO1.png" width="180px" alt=""/></a>
+                    <img src="componentes/images/UNIGEO.png" width="39px" alt="Inicio"/></a>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <?php
                         $permisos = ($_SESSION['permisos']);
                         if (empty($_SESSION['usuario'])) {
-                            //header("Location: Login.php");
+                          
                             ?>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

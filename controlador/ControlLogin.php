@@ -6,7 +6,8 @@ $usuario = htmlspecialchars(addslashes($_POST['usuario']));
 $password = htmlspecialchars(addslashes($_POST['password']));
 $fun = new ModeloLogin();
 $login = $fun->checklogin($usuario, $password);
-$datos = $fun->getpermiso($_SESSION['tipousuario']);
+$permisos = $fun->getpermiso($_SESSION['tipousuario']);
+echo $permisos;
 if ($login) {
     header('Location: ../vistas/proyecto.php');
 }

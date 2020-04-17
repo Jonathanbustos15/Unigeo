@@ -6,7 +6,7 @@
         <title>Proyecto</title>
         <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
         <link href="componentes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        //<script src="componentes/js/bootstrap.js" type="text/javascript"></script>
+        <script src="componentes/js/bootstrap.js" type="text/javascript"></script>
         <link href="componentes/css/Styleproyecto.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>

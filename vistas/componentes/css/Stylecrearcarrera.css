@@ -11,28 +11,29 @@ imput[type="file"] {
 }
 .titulo{
     text-align:center;
-    padding: 1em;
-    color: white;
-    background: rgba(12, 26, 47, .5);
+    padding-top: .5em;
+    color: rgb(152, 211, 83) !important;
     border-radius:12px;
 }
 
 .container{
-     padding-right:0 !important;
-     padding-left:0 !important;
-   }
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
 
 .cont{
-    background-color: rgba(0,0,0,.8) !important;  
-    color: #fff;
-    width: 60em !important;
+    background:rgba(255, 255, 255 ,.7); 
+    color: #000;
+    width: 50em !important;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
+    border: .5px solid rgba(0, 0, 0,.3);
+    
 }
 
 .logo_U{
     margin-left:2em;
     margin-top: 15%;
-    
+
 }

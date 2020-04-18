@@ -21,9 +21,9 @@ body {
 }
 
 .panel_left{
-    
+
     margin-top: 5%;
-    
+
 }
 
 
@@ -82,17 +82,17 @@ img {
 
 .modal-header {
     text-align: left;
-    background: #515554;
-    //background-color: rgb(248, 248, 248);
+    background:rgba(255, 255, 255 ,.7) !important; 
+    border: 50px solid rgba(0, 0, 0,.3);
     color: #fff;
 }
 
 .modal-body {
-    background: #364C5B;
+    background:rgba(255, 255, 255 ,.7) !important; 
 }
 
 .modal-footer {
-    background: #515554;
+    background:rgba(255, 255, 255 ,.7) !important; 
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -105,7 +105,7 @@ img {
 }
 
 .btn-close {
-    background: #007DAB;
+   background:rgba(255, 255, 255 ,.7) !important; 
     width: auto;
     height: 40px !important;
     color: #fff;
@@ -155,7 +155,7 @@ input {
     }
     .formulario {
         margin: 0%;
-       
+
     }
 }
 

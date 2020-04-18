@@ -6,7 +6,7 @@
 .mg1{
     height: 40%;
     margin-top: 3%;
-    background: rgba(0, 0, 0, .7)
+    background: rgba(255, 255, 255, .7)
 
 }
 .container1{
@@ -26,7 +26,7 @@
 table{
     margin-left: 30% !important;
     margin-bottom: 5%;
-    background: #18121E;
+    background-color: rgba(255,255,255, .6);
     border:solid 1px black;
     border-collapse: collapse;
     border-radius: 1em;
@@ -36,11 +36,11 @@ table{
 
 
 tr:nth-child(odd) {
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(255,255,255, .8);
 }
 
 tr:nth-child(even) {
-    background-color: rgba(0,0,0, .6);
+     background-color: rgba(255,255,255, .1);
 }
 
 td {
@@ -48,9 +48,9 @@ td {
     height: 50px;
     padding-left: 1rem;
     text-align: center;
-    border: 1px solid #944b43;
+    border: 1px solid #000;
     white-space: nowrap;  
-    color:#fff;
+    color:#000;
 }
 
 th{
@@ -58,7 +58,7 @@ th{
     height: 30px;
     padding-left: 15rem;
     white-space: nowrap;  
-    color:#062F4F;
+     color: rgb(152, 211, 83) !important;
 }
 
 .map{

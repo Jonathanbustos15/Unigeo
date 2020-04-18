@@ -18,7 +18,7 @@
             <div class="titulo" ><h4>Creacion de carrera</h4></div>
             <div class="row">
                 <div class="col-4 pt-5 logo_U">
-                    <img src="componentes/images/UNIGEO_1.png" alt="unigeo"/>
+                    <img src="componentes/images/Unigeo.png" width="300" alt="unigeo"/>
                 </div>
                 <!--panel derecho-->
 
